@@ -471,3 +471,29 @@
   font-size: 0.9em;
   color: #555;
 }
+.sticky-call {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-call {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c40000;
+    text-align: center;
+    z-index: 9999;
+  }
+
+  .sticky-call a {
+    display: block;
+    padding: 18px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
