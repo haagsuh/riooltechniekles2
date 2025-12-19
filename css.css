@@ -445,4 +445,29 @@
     .contactcard img{
       width: 400px;
     }
+
   }
+.cta-hero, .diensten-cta {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.cta-call {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 15px 25px;
+  background-color: #c40000;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-call:hover {
+  background-color: #a80000;
+}
+
+.cta-trust {
+  font-size: 0.9em;
+  color: #555;
+}
