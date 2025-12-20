@@ -544,6 +544,44 @@
     margin-top: 5px;
   }
 }
+.hero-conversie {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f7f7f7;
+}
+
+.hero-conversie h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero-sub {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.cta-hero {
+  display: inline-block;
+  background: #c40000;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-hero:hover {
+  background: #a80000;
+}
+
+.hero-trust {
+  margin-top: 15px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+
 
 
 
