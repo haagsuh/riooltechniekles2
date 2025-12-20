@@ -836,6 +836,48 @@ body > section.sec2container + hr {
   font-weight: bold;
   text-decoration: underline;
 }
+/* ================================
+   BLAUWE BLOKKEN OP HOMEPAGE
+   (sec2container + blauwblok)
+   ================================ */
+
+.sec2container.blauwblok {
+  background-color: #197288;
+  color: #ffffff;
+  padding: 50px 20px;
+}
+
+/* Koppen */
+.sec2container.blauwblok h1,
+.sec2container.blauwblok h2,
+.sec2container.blauwblok h3 {
+  color: #ffffff;
+}
+
+/* Tekst */
+.sec2container.blauwblok p,
+.sec2container.blauwblok li {
+  color: #e6f2ff;
+}
+
+/* Links */
+.sec2container.blauwblok a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Afbeeldingsvakken transparant houden */
+.sec2container.blauwblok .foto {
+  background: transparent;
+}
+
+/* Extra ruimte tussen opeenvolgende blauwe blokken */
+.sec2container.blauwblok + hr {
+  border-color: #4bb1d6;
+}
+
+
 
 
 
