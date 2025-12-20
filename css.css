@@ -559,6 +559,36 @@
 .topcontainer .cta-trust {
   font-size: 0.85em;
 }
+/* Homepage CTA dezelfde blauwe stijl als andere blokken */
+.topcontainer .cta-hero {
+  background-color: #197288; /* zelfde blauw als header/footer */
+  color: #ffffff;
+  padding: 12px 15px;
+  border-radius: 0 0 20px 20px;
+}
+
+.topcontainer .cta-hero p,
+.topcontainer .cta-hero strong {
+  color: #ffffff;
+}
+
+.topcontainer .cta-call {
+  background-color: #158edf; /* zelfde blauw als knoppen */
+  color: #ffffff;
+  font-size: 0.95em;
+  padding: 8px 14px;
+}
+
+.topcontainer .cta-call:hover {
+  background-color: #127dc4;
+}
+
+.topcontainer .cta-trust {
+  color: #e6f2ff;
+  font-size: 0.85em;
+}
+
+
 
 
 
