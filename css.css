@@ -813,6 +813,31 @@ body > section.sec2container .foto {
 body > section.sec2container + hr {
   border-color: #40a2e4;
 }
+/* Definitieve oplossing: expliciete blauwe blokken op homepage */
+.blauwblok {
+  background-color: #197288;
+  color: #ffffff;
+  padding: 50px 20px;
+}
+
+.blauwblok h1,
+.blauwblok h2,
+.blauwblok h3 {
+  color: #ffffff;
+}
+
+.blauwblok p,
+.blauwblok li {
+  color: #e6f2ff;
+}
+
+.blauwblok a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 
 
 
