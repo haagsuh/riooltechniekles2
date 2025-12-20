@@ -610,6 +610,61 @@
   font-weight: bold;
   text-decoration: underline;
 }
+/* ===== HOMEPAGE: ALLE BLOKKEN IN BLAUWE HUISSTIJL ===== */
+
+/* Alle hoofdblokken op index */
+.topcontainer,
+.sec2container,
+.sec3container,
+.sec4container {
+  background-color: #197288;
+  color: #ffffff;
+  padding: 30px 20px;
+}
+
+/* Koppen */
+.topcontainer h1,
+.topcontainer h2,
+.sec2container h2,
+.sec2container h3,
+.sec3container h2,
+.sec3container h3,
+.sec4container h2,
+.sec4container h3 {
+  color: #ffffff;
+}
+
+/* Tekst */
+.topcontainer p,
+.sec2container p,
+.sec3container p,
+.sec4container p,
+.sec2container li,
+.sec3container li,
+.sec4container li {
+  color: #e6f2ff; /* zacht wit, beter leesbaar */
+}
+
+/* Links */
+.topcontainer a,
+.sec2container a,
+.sec3container a,
+.sec4container a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* CTA-knoppen blijven contrasterend */
+.topcontainer .cta-call {
+  background-color: #158edf;
+  color: #ffffff;
+}
+
+.topcontainer .cta-call:hover {
+  background-color: #127dc4;
+}
+
 
 
 
