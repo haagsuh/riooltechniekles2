@@ -689,6 +689,53 @@
   color: #ffffff;
   text-decoration: underline;
 }
+/* === Homepage intro + FAQ teaser + regio-links in blauwe stijl === */
+
+.introcontainer,
+.faq-teaser,
+.regiocontainer {
+  background-color: #197288;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+/* Tekst */
+.introcontainer p,
+.faq-teaser p,
+.regiocontainer p {
+  color: #e6f2ff;
+}
+
+/* Koppen */
+.introcontainer h2,
+.faq-teaser h2,
+.regiocontainer h2 {
+  color: #ffffff;
+}
+
+/* FAQ knop */
+.faq-teaser a {
+  display: inline-block;
+  background-color: #158edf;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.faq-teaser a:hover {
+  background-color: #127dc4;
+}
+
+/* Regio links */
+.regiocontainer a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 
 
 
