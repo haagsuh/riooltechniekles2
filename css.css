@@ -734,6 +734,51 @@
   font-weight: bold;
   text-decoration: underline;
 }
+/* ===== Homepage: wit/grijze middenblok ook blauw maken ===== */
+
+/* Blok met tekst + illustratie (direct na CTA-blok) */
+.cta-hero + div {
+  background-color: #197288;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+/* Tekst leesbaar */
+.cta-hero + div p {
+  color: #e6f2ff;
+}
+
+/* Koppen */
+.cta-hero + div h2,
+.cta-hero + div h3 {
+  color: #ffffff;
+}
+
+/* FAQ knop in dit blok */
+.cta-hero + div a {
+  background-color: #158edf;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Regio-links blok ook blauw ===== */
+
+.cta-hero + div + div {
+  background-color: #197288;
+  color: #ffffff;
+  padding: 30px 20px;
+}
+
+.cta-hero + div + div a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 
 
 
