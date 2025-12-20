@@ -496,4 +496,54 @@
     text-decoration: none;
   }
 }
+.prijsblok {
+  margin: 25px 0;
+}
+
+.prijstabel {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.prijsrij {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.prijsrij:last-child {
+  border-bottom: none;
+}
+
+.prijsdienst {
+  font-weight: 600;
+}
+
+.prijsbedrag {
+  font-weight: 600;
+  color: #c40000;
+  text-align: right;
+}
+
+.prijsnotitie {
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Mobielvriendelijk */
+@media screen and (max-width: 600px) {
+  .prijsrij {
+    flex-direction: column;
+  }
+
+  .prijsbedrag {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+
 
