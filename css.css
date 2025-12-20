@@ -587,6 +587,31 @@
   color: #e6f2ff;
   font-size: 0.85em;
 }
+/* Homepage tweede blok ook blauw en leesbaar maken */
+.topcontainer + .sec2container {
+  background-color: #197288; /* zelfde blauw als andere blokken */
+  color: #ffffff;
+  padding: 30px 20px;
+}
+
+.topcontainer + .sec2container h2,
+.topcontainer + .sec2container h3 {
+  color: #ffffff;
+}
+
+.topcontainer + .sec2container p,
+.topcontainer + .sec2container li {
+  color: #e6f2ff; /* iets zachter wit voor leesbaarheid */
+}
+
+/* Links in dit blok */
+.topcontainer + .sec2container a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 
 
 
