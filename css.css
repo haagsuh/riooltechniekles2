@@ -777,6 +777,44 @@
   font-weight: bold;
   text-decoration: underline;
 }
+/* ===== INDEX: alle sec2container blokken blauw & leesbaar ===== */
+
+body > section.sec2container {
+  background-color: #197288 !important;
+  color: #ffffff;
+  padding: 50px 20px;
+}
+
+/* Tekst in deze blokken */
+body > section.sec2container p,
+body > section.sec2container li {
+  color: #e6f2ff;
+}
+
+/* Koppen */
+body > section.sec2container h2,
+body > section.sec2container h3 {
+  color: #ffffff;
+}
+
+/* Links */
+body > section.sec2container a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Afbeeldingscontainers iets laten afsteken */
+body > section.sec2container .foto {
+  background-color: transparent;
+}
+
+/* Ruimte tussen opeenvolgende blauwe blokken */
+body > section.sec2container + hr {
+  border-color: #40a2e4;
+}
+
+
 
 
 
