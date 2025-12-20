@@ -789,6 +789,87 @@
     grid-template-columns: 1fr;
   }
 }
+/* ======================
+   HOMEPAGE BLAUWE BLOKKEN
+   ====================== */
+
+.home-blok {
+  background-color: #197288;
+  padding: 60px 30px;
+  border-radius: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.home-blok h2 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.home-blok p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e6f2ff;
+}
+
+/* Regio links */
+.regio-links {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.regio-links a {
+  background: rgba(255,255,255,0.18);
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.regio-links a:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+/* Rioolbreuken layout */
+.rioolbreuk-flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.rioolbreuk-tekst {
+  flex: 1;
+}
+
+.rioolbreuk-afbeeldingen {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.rioolbreuk-afbeeldingen .card-image {
+  height: 240px;
+  border-radius: 12px;
+  background-size: cover;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .rioolbreuk-flex {
+    flex-direction: column;
+  }
+
+  .rioolbreuk-afbeeldingen {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 
