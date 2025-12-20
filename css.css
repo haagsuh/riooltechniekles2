@@ -613,14 +613,6 @@
 /* ===== HOMEPAGE: ALLE BLOKKEN IN BLAUWE HUISSTIJL ===== */
 
 /* Alle hoofdblokken op index */
-.topcontainer,
-.sec2container,
-.sec3container,
-.sec4container {
-  background-color: #197288;
-  color: #ffffff;
-  padding: 30px 20px;
-}
 
 /* Koppen */
 .topcontainer h1,
@@ -664,6 +656,41 @@
 .topcontainer .cta-call:hover {
   background-color: #127dc4;
 }
+/* === Homepage: grijze blokken zelfde stijl als blauwe CTA === */
+
+/* Bovenste grijze blok */
+.topcontainer {
+  background-color: #197288;
+  color: #ffffff;
+}
+
+/* Onderste grijze tekstblok direct na CTA */
+.cta-hero + .sec2container {
+  background-color: #197288;
+  color: #ffffff;
+}
+
+/* Tekst leesbaar maken */
+.topcontainer h1,
+.topcontainer h2,
+.cta-hero + .sec2container h2,
+.cta-hero + .sec2container h3 {
+  color: #ffffff;
+}
+
+.topcontainer p,
+.cta-hero + .sec2container p {
+  color: #e6f2ff;
+}
+
+/* Links */
+.topcontainer a,
+.cta-hero + .sec2container a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
 
 
 
