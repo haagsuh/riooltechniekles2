@@ -1012,6 +1012,78 @@ section.container .card a {
     grid-template-columns: 1fr;
   }
 }
+/* HERSTEL REGIO BLOK */
+.regio-blok {
+  background-color: #1f7f98;
+}
+
+.regio-blok h2 {
+  font-size: 2rem;
+}
+
+.regio-blok p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.regio-blok .regio-links {
+  justify-content: center;
+}
+
+.regio-blok .regio-links a {
+  font-size: 0.95rem;
+}
+/* =========================
+   RIOOLBREUKEN BLOK – GEÏSOLEERD
+   ========================= */
+
+.rioolbreuk-blok {
+  background-color: #1f7f98;
+}
+
+.rioolbreuk-blok .rioolbreuk-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Tekst */
+.rioolbreuk-blok h2 {
+  font-size: 2rem;
+}
+
+.rioolbreuk-blok p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Afbeeldingen */
+.rioolbreuk-blok .rioolbreuk-afbeeldingen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.rioolbreuk-blok .card-image {
+  height: 220px;
+  border-radius: 8px;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .rioolbreuk-blok .rioolbreuk-content {
+    grid-template-columns: 1fr;
+  }
+
+  .rioolbreuk-blok .card-image {
+    height: 200px;
+  }
+}
+
+
 
 
 
