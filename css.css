@@ -689,265 +689,36 @@
   color: #ffffff;
   text-decoration: underline;
 }
-/* === Homepage intro + FAQ teaser + regio-links in blauwe stijl === */
-
-.introcontainer,
-.faq-teaser,
-.regiocontainer {
-  background-color: #197288;
-  color: #ffffff;
-  padding: 40px 20px;
-}
-
-/* Tekst */
-.introcontainer p,
-.faq-teaser p,
-.regiocontainer p {
-  color: #e6f2ff;
-}
-
-/* Koppen */
-.introcontainer h2,
-.faq-teaser h2,
-.regiocontainer h2 {
-  color: #ffffff;
-}
-
-/* FAQ knop */
-.faq-teaser a {
-  display: inline-block;
-  background-color: #158edf;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.faq-teaser a:hover {
-  background-color: #127dc4;
-}
-
-/* Regio links */
-.regiocontainer a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline;
-}
-/* ===== Homepage: wit/grijze middenblok ook blauw maken ===== */
-
-/* Blok met tekst + illustratie (direct na CTA-blok) */
-.cta-hero + div {
-  background-color: #197288;
-  color: #ffffff;
-  padding: 40px 20px;
-}
-
-/* Tekst leesbaar */
-.cta-hero + div p {
-  color: #e6f2ff;
-}
-
-/* Koppen */
-.cta-hero + div h2,
-.cta-hero + div h3 {
-  color: #ffffff;
-}
-
-/* FAQ knop in dit blok */
-.cta-hero + div a {
-  background-color: #158edf;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* ===== Regio-links blok ook blauw ===== */
-
-.cta-hero + div + div {
-  background-color: #197288;
-  color: #ffffff;
-  padding: 30px 20px;
-}
-
-.cta-hero + div + div a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline;
-}
-/* ===== INDEX: alle sec2container blokken blauw & leesbaar ===== */
-
-body > section.sec2container {
-  background-color: #197288 !important;
-  color: #ffffff;
-  padding: 50px 20px;
-}
-
-/* Tekst in deze blokken */
-body > section.sec2container p,
-body > section.sec2container li {
-  color: #e6f2ff;
-}
-
-/* Koppen */
-body > section.sec2container h2,
-body > section.sec2container h3 {
-  color: #ffffff;
-}
-
-/* Links */
-body > section.sec2container a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-/* Afbeeldingscontainers iets laten afsteken */
-body > section.sec2container .foto {
-  background-color: transparent;
-}
-
-/* Ruimte tussen opeenvolgende blauwe blokken */
-body > section.sec2container + hr {
-  border-color: #40a2e4;
-}
-/* Definitieve oplossing: expliciete blauwe blokken op homepage */
-.blauwblok {
-  background-color: #197288;
-  color: #ffffff;
-  padding: 50px 20px;
-}
-
-.blauwblok h1,
-.blauwblok h2,
-.blauwblok h3 {
-  color: #ffffff;
-}
-
-.blauwblok p,
-.blauwblok li {
-  color: #e6f2ff;
-}
-
-.blauwblok a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline;
-}
-/* ================================
-   BLAUWE BLOKKEN OP HOMEPAGE
-   (sec2container + blauwblok)
-   ================================ */
-
-.sec2container.blauwblok {
-  background-color: #197288;
-  color: #ffffff;
-  padding: 50px 20px;
-}
-
-/* Koppen */
-.sec2container.blauwblok h1,
-.sec2container.blauwblok h2,
-.sec2container.blauwblok h3 {
-  color: #ffffff;
-}
-
-/* Tekst */
-.sec2container.blauwblok p,
-.sec2container.blauwblok li {
-  color: #e6f2ff;
-}
-
-/* Links */
-.sec2container.blauwblok a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-/* Afbeeldingsvakken transparant houden */
-.sec2container.blauwblok .foto {
-  background: transparent;
-}
-
-/* Extra ruimte tussen opeenvolgende blauwe blokken */
-.sec2container.blauwblok + hr {
-  border-color: #4bb1d6;
-}
-/* ===== Footer reviews (Trustoo / Google) ===== */
-
-.footer-reviews {
-  width: 100%;
-  margin: 30px auto 0 auto;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  display: flex;
-  justify-content: center;
-}
-
-.footer-reviews .trustoo-widget {
-  max-width: 320px;
-}
-
-/* Mobiel */
-@media (max-width: 768px) {
-  .footer-reviews {
-    margin-top: 20px;
-    padding-top: 15px;
-  }
-}
-/* Dienstenblok rustiger en professioneler */
-section.container {
-  background-color: #f8f9fb;
-  padding: 50px 20px;
-}
-
-section.container .card a {
-  color: #197288;
-}
-/* Waarom kiezen voor... compacter en rustiger */
-.sec2container.blauwblok {
-  padding: 35px 20px;
-}
-
-.sec2container.blauwblok p {
-  max-width: 750px;
-}
-/* Subtiele professionele scheiding tussen homepage blokken */
-.sec2container {
-  border-top: 1px solid rgba(0,0,0,0.05);
-}
-
-/* Titels iets strakker en zakelijker */
-.sec2container h2 {
-  margin-bottom: 15px;
-  letter-spacing: 0.3px;
-}
-
-/* Tekst iets compacter */
-.sec2container p {
-  line-height: 1.6;
-}
 /* =========================
-   REGIO BLOK – PROFESSIONEEL
+   REGIO BLOK – GEÏSOLEERD
    ========================= */
 
-.regio-blok {
-  background-color: #1f7f98;
+.sec2container.regio-blok {
+  background-color: #197288;
+  padding: 50px 20px;
 }
 
-.regio-blok .ontstaanbreuk {
+.sec2container.regio-blok .ontstaanbreuk {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.sec2container.regio-blok h2 {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.sec2container.regio-blok p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e6f2ff;
 }
 
 .regio-links {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .regio-links a {
@@ -957,29 +728,23 @@ section.container .card a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.2s ease;
 }
 
 .regio-links a:hover {
   background-color: rgba(255,255,255,0.3);
 }
 
-/* Mobiel */
-@media (max-width: 768px) {
-  .regio-links {
-    justify-content: center;
-  }
-}
 /* =========================
-   RIOOLBREUKEN BLOK – EXPERT
+   RIOOLBREUKEN BLOK – GEÏSOLEERD
    ========================= */
 
-.rioolbreuk-blok {
-  background-color: #1f7f98;
+.sec2container.rioolbreuk-blok {
+  background-color: #197288;
+  padding: 60px 20px;
 }
 
 .rioolbreuk-content {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   gap: 40px;
@@ -990,16 +755,28 @@ section.container .card a {
   flex: 1;
 }
 
+.rioolbreuk-tekst h2 {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.rioolbreuk-tekst p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #e6f2ff;
+}
+
 .rioolbreuk-afbeeldingen {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 16px;
 }
 
 .rioolbreuk-afbeeldingen .card-image {
-  height: 180px;
-  border-radius: 8px;
+  height: 240px;
+  background-size: cover;
+  border-radius: 10px;
 }
 
 /* Mobiel */
@@ -1012,76 +789,8 @@ section.container .card a {
     grid-template-columns: 1fr;
   }
 }
-/* HERSTEL REGIO BLOK */
-.regio-blok {
-  background-color: #1f7f98;
-}
 
-.regio-blok h2 {
-  font-size: 2rem;
-}
 
-.regio-blok p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.regio-blok .regio-links {
-  justify-content: center;
-}
-
-.regio-blok .regio-links a {
-  font-size: 0.95rem;
-}
-/* =========================
-   RIOOLBREUKEN BLOK – GEÏSOLEERD
-   ========================= */
-
-.rioolbreuk-blok {
-  background-color: #1f7f98;
-}
-
-.rioolbreuk-blok .rioolbreuk-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-/* Tekst */
-.rioolbreuk-blok h2 {
-  font-size: 2rem;
-}
-
-.rioolbreuk-blok p {
-  font-size: 1rem;
-  line-height: 1.7;
-}
-
-/* Afbeeldingen */
-.rioolbreuk-blok .rioolbreuk-afbeeldingen {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.rioolbreuk-blok .card-image {
-  height: 220px;
-  border-radius: 8px;
-}
-
-/* Mobiel */
-@media (max-width: 768px) {
-  .rioolbreuk-blok .rioolbreuk-content {
-    grid-template-columns: 1fr;
-  }
-
-  .rioolbreuk-blok .card-image {
-    height: 200px;
-  }
-}
 
 
 
