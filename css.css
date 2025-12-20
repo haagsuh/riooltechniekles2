@@ -970,6 +970,49 @@ section.container .card a {
     justify-content: center;
   }
 }
+/* =========================
+   RIOOLBREUKEN BLOK – EXPERT
+   ========================= */
+
+.rioolbreuk-blok {
+  background-color: #1f7f98;
+}
+
+.rioolbreuk-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.rioolbreuk-tekst {
+  flex: 1;
+}
+
+.rioolbreuk-afbeeldingen {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.rioolbreuk-afbeeldingen .card-image {
+  height: 180px;
+  border-radius: 8px;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .rioolbreuk-content {
+    flex-direction: column;
+  }
+
+  .rioolbreuk-afbeeldingen {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 
