@@ -868,6 +868,88 @@
     grid-template-columns: 1fr;
   }
 }
+/* ==============================
+   HOMEPAGE – SCHONE BLAUWE BLOKKEN
+   ============================== */
+
+.homepage-blok {
+  background-color: #197288;
+  padding: 60px 30px;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.homepage-blok h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.homepage-blok p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e6f2ff;
+}
+
+/* Regio knoppen */
+.homepage-regio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.homepage-regio a {
+  background-color: rgba(255,255,255,0.2);
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.homepage-regio a:hover {
+  background-color: rgba(255,255,255,0.35);
+}
+
+/* Rioolbreuk layout */
+.homepage-breuk {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.breuk-tekst {
+  flex: 1;
+}
+
+.breuk-afbeeldingen {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.breuk-afbeeldingen .card-image {
+  height: 240px;
+  border-radius: 12px;
+  background-size: cover;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .homepage-breuk {
+    flex-direction: column;
+  }
+
+  .breuk-afbeeldingen {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 
