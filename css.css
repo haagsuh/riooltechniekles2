@@ -876,6 +876,30 @@ body > section.sec2container + hr {
 .sec2container.blauwblok + hr {
   border-color: #4bb1d6;
 }
+/* ===== Footer reviews (Trustoo / Google) ===== */
+
+.footer-reviews {
+  width: 100%;
+  margin: 30px auto 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-reviews .trustoo-widget {
+  max-width: 320px;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .footer-reviews {
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+}
+
+
 
 
 
