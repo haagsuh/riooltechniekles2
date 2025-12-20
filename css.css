@@ -930,6 +930,48 @@ section.container .card a {
 .sec2container p {
   line-height: 1.6;
 }
+/* =========================
+   REGIO BLOK – PROFESSIONEEL
+   ========================= */
+
+.regio-blok {
+  background-color: #1f7f98;
+}
+
+.regio-blok .ontstaanbreuk {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.regio-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.regio-links a {
+  background-color: rgba(255,255,255,0.15);
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.regio-links a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .regio-links {
+    justify-content: center;
+  }
+}
+
+
 
 
 
