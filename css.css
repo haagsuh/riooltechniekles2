@@ -898,6 +898,24 @@ body > section.sec2container + hr {
     padding-top: 15px;
   }
 }
+/* Dienstenblok rustiger en professioneler */
+section.container {
+  background-color: #f8f9fb;
+  padding: 50px 20px;
+}
+
+section.container .card a {
+  color: #197288;
+}
+/* Waarom kiezen voor... compacter en rustiger */
+.sec2container.blauwblok {
+  padding: 35px 20px;
+}
+
+.sec2container.blauwblok p {
+  max-width: 750px;
+}
+
 
 
 
