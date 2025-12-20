@@ -544,6 +544,21 @@
     margin-top: 5px;
   }
 }
+/* Rustige CTA op homepage */
+.topcontainer .cta-call {
+  font-size: 0.95em;
+  padding: 8px 14px;
+  margin: 10px 0;
+}
+
+.topcontainer .cta-hero p {
+  font-size: 0.9em;
+  margin: 6px 0;
+}
+
+.topcontainer .cta-trust {
+  font-size: 0.85em;
+}
 
 
 
