@@ -915,6 +915,23 @@ section.container .card a {
 .sec2container.blauwblok p {
   max-width: 750px;
 }
+/* Subtiele professionele scheiding tussen homepage blokken */
+.sec2container {
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Titels iets strakker en zakelijker */
+.sec2container h2 {
+  margin-bottom: 15px;
+  letter-spacing: 0.3px;
+}
+
+/* Tekst iets compacter */
+.sec2container p {
+  line-height: 1.6;
+}
+
+
 
 
 
