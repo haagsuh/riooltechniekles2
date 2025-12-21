@@ -1,273 +1,232 @@
-/* =====================
-   BASIS
-===================== */
-
+/* General Styles */
 body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
 }
 
-/* =====================
-   HEADER
-===================== */
+h1, h2, h3 {
+  color: #197288;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
 .header {
   text-align: center;
-  background: #197288;
-  height: 250px;
+  background-color: #197288;
+  padding: 20px 0;
 }
 
 .logo {
-  position: relative;
-  top: 40px;
-  max-width: 380px;
+  max-width: 150px;
 }
 
-/* =====================
-   MENU
-===================== */
-
+/* Sticky Menu */
 .menu {
   position: sticky;
   top: 0;
   background-color: #158edf;
   z-index: 1000;
+  padding: 10px 0;
 }
 
 .menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #158edf;
 }
 
 .menu li {
-  display: inline-block;
+  margin: 0 15px;
 }
 
 .menu a {
-  color: #fff;
-  padding: 14px 28px;
-  text-decoration: none;
+  color: white;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .menu a:hover {
   background-color: #127dc4;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-/* =====================
-   HERO / TOP
-===================== */
-
+/* Hero Section */
 .topcontainer {
   background-color: #197288;
-  color: #ffffff;
+  color: white;
+  text-align: center;
   padding: 40px 20px;
-  border-radius: 0 0 20px 20px;
 }
 
-.topcontainer h1,
-.topcontainer h2,
-.topcontainer p {
-  color: #ffffff;
-  text-align: center;
+.topcontainer h1 {
+  font-size: 36px;
 }
 
-.cta-hero {
-  background-color: #1f6f84;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  margin: 25px auto;
+.topcontainer h2 {
+  font-size: 28px;
+  margin-top: 10px;
 }
 
 .cta-call {
-  display: inline-block;
   background-color: #158edf;
-  color: #fff;
-  padding: 12px 22px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 15px;
 }
 
 .cta-call:hover {
   background-color: #127dc4;
 }
 
-/* =====================
-   DIENSTEN
-===================== */
-
+/* Card Styles */
 .container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 60px 20px;
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .card {
-  width: 260px;
-  margin: 20px;
-  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
 }
 
 .card-image {
-  height: 280px;
+  height: 180px;
   background-size: cover;
-  border-radius: 14px;
-  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
 }
 
 .card a {
   display: block;
+  padding: 10px;
   background-color: #fcad46;
-  color: #fff;
-  padding: 12px;
-  text-decoration: none;
-  border-radius: 8px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 0 10px 10px;
 }
 
-/* =====================
-   SCHEIDING
-===================== */
-
-.solid-divider {
-  border: 1px solid #40a2e4;
+.card a:hover {
+  background-color: #ff9f00;
 }
 
-/* =====================
-   ABOUT
-===================== */
-
+/* About Section */
 .about-section {
   background-color: #1f7386;
-  padding: 80px 20px;
+  padding: 40px;
+  color: white;
 }
 
 .about-inner {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  gap: 60px;
-  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .about-text {
-  color: #ffffff;
+  flex: 1;
 }
 
 .about-image img {
   max-width: 100%;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 16px;
+  border-radius: 10px;
 }
 
-/* =====================
-   REGIO
-===================== */
-
-.regio-blok {
-  background-color: #1f6f84;
+/* Region Section */
+.sec2container.regio-blok {
+  background-color: #197288;
   padding: 60px 20px;
-}
-
-.regio-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  background-color: #2f8fa6;
-  border-radius: 20px;
-  padding: 40px;
-  text-align: center;
+  color: white;
 }
 
 .regio-cards {
   display: flex;
+  gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
 }
 
 .regio-card {
-  background-color: #4fb3cf;
-  color: #fff;
-  padding: 12px 22px;
-  border-radius: 10px;
-  text-decoration: none;
+  background-color: #158edf;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-/* =====================
-   RIOOLBREUKEN
-===================== */
-
-.rioolbreuk-section {
-  background-color: #1f6f84;
-  padding: 70px 20px;
+.regio-card:hover {
+  background-color: #127dc4;
 }
 
-.rioolbreuk-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  background-color: #2f8fa6;
-  border-radius: 22px;
-  padding: 40px;
-  display: flex;
-  gap: 40px;
-}
-
-.rioolbreuk-tekst {
-  color: #ffffff;
-}
-
-.rioolbreuk-afbeeldingen {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-.rioolbreuk-afbeeldingen img {
-  width: 100%;
-  border-radius: 14px;
-}
-
-/* =====================
-   FOOTER
-===================== */
-
+/* Footer */
 .footer-container {
-  background-color: #1f6f84;
-  padding: 60px 20px;
+  background-color: #197288;
+  color: white;
+  padding: 40px 20px;
 }
 
 .footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer a {
-  color: #e6f2ff;
-  text-decoration: none;
+.footer-heading {
+  flex: 1;
 }
 
-/* =====================
-   MOBIEL
-===================== */
+.footer-heading h2 {
+  margin-bottom: 10px;
+}
 
-@media (max-width: 900px) {
-  .about-inner,
-  .rioolbreuk-inner {
+.footer-heading a {
+  color: white;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.footer-heading a:hover {
+  color: #fcad46;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-inner {
     flex-direction: column;
     text-align: center;
   }
 
+  .regio-cards {
+    flex-direction: column;
+  }
+
   .footer {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
   }
 }
