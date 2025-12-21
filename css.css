@@ -991,6 +991,68 @@
   background-color: #197288;
   padding: 80px 20px;
 }
+/* ===== Werkzaam in de regio – lichtblauwe stijl ===== */
+
+.regio-blok {
+  background-color: #1f6f84;
+  padding: 60px 20px;
+}
+
+.regio-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #2f8fa6;
+  border-radius: 20px;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.regio-inner h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.regio-inner p {
+  color: #eaf6fb;
+  margin-bottom: 35px;
+  font-size: 1.05rem;
+}
+
+.regio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.regio-card {
+  background-color: #4fb3cf;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.regio-card:hover {
+  background-color: #3aa0bc;
+  transform: translateY(-2px);
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .regio-inner {
+    padding: 35px 20px;
+  }
+
+  .regio-card {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+
 
 
 
