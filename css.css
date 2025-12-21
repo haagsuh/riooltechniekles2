@@ -748,7 +748,7 @@
 }
 
 .regio-links a {
-  background-color: rgba(255,255,255,0.15);
+  background-color: #158edf;
   padding: 10px 16px;
   border-radius: 6px;
   color: #ffffff;
@@ -757,7 +757,7 @@
 }
 
 .regio-links a:hover {
-  background-color: rgba(255,255,255,0.3);
+  background-color: #158edf
 }
 
 /* =========================
@@ -767,6 +767,7 @@
 .sec2container.rioolbreuk-blok {
   background-color: #197288;
   padding: 60px 20px;
+  min-height: 100vh;
 }
 
 .rioolbreuk-content {
@@ -1053,61 +1054,72 @@
 }
 /* ===== Rioolbreuken sectie ===== */
 
+html, body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Zorg ervoor dat de achtergrond de volledige hoogte van het scherm vult */
+/* Verminder de hoogte van de secties */
+.rioolbreuk-section, .sec2container, .homepage-blok {
+  min-height: 60vh; /* Maak de secties kleiner dan de volledige hoogte van het scherm */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Zorg ervoor dat de inhoud bovenaan begint */
+  padding: 20px; /* Pas de padding aan voor minder ruimte binnenin */
+}
+
+/* Specifieke instellingen voor de blokken */
 .rioolbreuk-section {
   background-color: #1f6f84;
-  padding: 70px 20px;
+  padding: 30px 20px; /* Verminder de padding */
 }
 
-.rioolbreuk-inner {
-  max-width: 1100px;
+.sec2container {
+  background-color: #197288;
+  padding: 20px 20px; /* Verminder de padding */
+}
+
+.homepage-blok {
+  background-color: #197288;
+  padding: 30px 20px; /* Verminder de padding */
+}
+
+.footer-container {
+  background-color: #197288;
+  padding: 30px 20px; /* Verminder de padding */
+}
+
+/* Footer layout - Verklein de ruimte tussen elementen */
+.footer {
+  max-width: 1200px;
   margin: 0 auto;
-  background-color: #2f8fa6;
-  border-radius: 22px;
-  padding: 50px 40px;
   display: flex;
-  gap: 40px;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px; /* Verminder de gap tussen de footer items */
 }
 
-.rioolbreuk-tekst {
-  flex: 1;
+/* De inhoud van de secties kan nu ook kleiner zijn */
+.rioolbreuk-inner, .sec2container .homepage-blok, .footer-container .footer {
+  padding: 20px;
+  width: 100%; /* Zorg ervoor dat ze de beschikbare ruimte benutten */
 }
 
-.rioolbreuk-tekst h2 {
-  color: #ffffff;
-  margin-bottom: 15px;
-}
-
-.rioolbreuk-tekst p {
-  color: #eaf6fb;
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-.rioolbreuk-afbeeldingen {
-  flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-}
-
-.rioolbreuk-afbeeldingen img {
-  width: 100%;
-  border-radius: 14px;
-  object-fit: cover;
-}
-
-/* Mobiel */
-@media (max-width: 900px) {
-  .rioolbreuk-inner {
-    flex-direction: column;
-    text-align: center;
+/* Verklein de hoogte voor mobiele weergave */
+@media (max-width: 768px) {
+  .rioolbreuk-section, .sec2container, .homepage-blok {
+    min-height: 50vh; /* Maak de secties kleiner op mobiele apparaten */
+    padding: 15px; /* Verklein de padding op mobiele apparaten */
   }
 
-  .rioolbreuk-afbeeldingen {
-    grid-template-columns: 1fr;
+  .footer-container {
+    padding: 20px; /* Verklein de padding van de footer */
   }
 }
+
 /* ===== Footer scheiding ===== */
 /* Universele scheidingslijn */
 .section-divider {
