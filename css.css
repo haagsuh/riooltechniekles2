@@ -1051,6 +1051,64 @@
     max-width: 260px;
   }
 }
+/* ===== Rioolbreuken sectie ===== */
+
+.rioolbreuk-section {
+  background-color: #1f6f84;
+  padding: 70px 20px;
+}
+
+.rioolbreuk-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #2f8fa6;
+  border-radius: 22px;
+  padding: 50px 40px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.rioolbreuk-tekst {
+  flex: 1;
+}
+
+.rioolbreuk-tekst h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.rioolbreuk-tekst p {
+  color: #eaf6fb;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.rioolbreuk-afbeeldingen {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.rioolbreuk-afbeeldingen img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Mobiel */
+@media (max-width: 900px) {
+  .rioolbreuk-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rioolbreuk-afbeeldingen {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 
 
