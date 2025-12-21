@@ -1,232 +1,989 @@
-/* General Styles */
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-}
-
-h1, h2, h3 {
-  color: #197288;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header */
 .header {
-  text-align: center;
-  background-color: #197288;
-  padding: 20px 0;
+    text-align: center;
+    background: #197288;
+    color: white;
+    font-size: 30px;
+    height: 250px;
+    max-width: 100%;
+
+  }
+
+  .logo {
+    position:relative;
+    left: 20px;
+    top: 20px;
+  }
+
+  .menu{
+    overflow: hidden;
+    position: sticky; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  /*hamburger menu*/
+  .hamburger{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    margin: auto;
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+  }
+  .hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: #19191a;
+    margin: 3px 0;
+    border-radius: 2px;
+    
+  }
+  .open .mobile-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+  .mobile-menu{
+    display: none;
+    position: fixed;
+    top:0px;
+    left: 0;
+    height: calc(100vh -50px);
+    width: 100%;
+    z-index: -1;
+  }
+
+  /*.hamburger:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+  }*/
+  ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #158edf;
+    text-align: center;
+  }
+  
+  li {
+    display: inline-block;
+    
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #127dc4;
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .fa-brands{
+    font-size: 25px;
+    color: white;
+  }
+  .fa-brands:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+  }
+  .topcontainer {
+    background-color: rgb(231, 229, 229);
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    
+  }
+  .topcontainer h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .topcontainer h2{
+    font-size: 40px;
+    color: #125de7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+  }
+  .container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
 }
 
-.logo {
-  max-width: 150px;
+.card{
+    width: 270px;
+    margin: 25px;
+    border-radius: 15px;
+    padding: 60px;
 }
-
-/* Sticky Menu */
-.menu {
-  position: sticky;
-  top: 0;
-  background-color: #158edf;
-  z-index: 1000;
-  padding: 10px 0;
-}
-
-.menu ul {
-  display: flex;
-  justify-content: center;
-  background-color: #158edf;
-}
-
-.menu li {
-  margin: 0 15px;
-}
-
-.menu a {
+.card a{
+  background-color: #fcad46;
   color: white;
-  font-size: 16px;
   font-weight: bold;
-}
-
-.menu a:hover {
-  background-color: #127dc4;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-/* Hero Section */
-.topcontainer {
-  background-color: #197288;
-  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 20px;
+  display:block;
   text-align: center;
-  padding: 40px 20px;
+  margin: 20px 50px;
+  border-radius: 10px;
+  
+}
+.card a:hover{
+  transform: scale(1.10);
+  transition: 0.5s;
 }
 
-.topcontainer h1 {
-  font-size: 36px;
+.card-image{
+    background-color: transparent;
+    height: 350px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 15px 15px;
 }
 
-.topcontainer h2 {
-  font-size: 28px;
-  margin-top: 10px;
+.Reparatie-1{
+    background-image: url(reparatiee.jpg);
+}
+
+.verstoppingen-2{
+    background-image: url(flexshaft.jpg);
+}
+
+.onderzoek-3{
+    background-image: url(camera.jpg);
+}
+
+.sec2container{
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+.sec2container a{
+  background-color: #158edf;
+  color: white;
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px 20px;
+  display:block;
+  text-align: center;
+  margin: 20px 50px;
+  }
+
+.foto {
+  background: white;
+  width: 400px;
+  margin: 25px;
+  border-radius: 15px;
+}
+
+.breuk{
+      background-image: url(breuk.jpg);
+  }
+  
+.herstel{
+      background-image: url(reparatie.jpg);
+  }
+  .card-image2{
+    background-color: transparent;
+    height: 350px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 15px 15px;
+  }
+  .cartoon{
+    background-image: url(cartoon2.png);
+
+  }
+
+  .solid-divider {
+    border: 1px solid #40a2e4;
+}
+.ontstaanbreuk{
+  padding-left: 60px;
+  padding-top: 20px;
+}
+.ontstaanbreuk h1{
+  font-size: 40px;
+  color: #2a79e0;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ontstaanbreuk p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+}
+
+.trustoo-widget{
+  padding-bottom: 20px;
+  left: 20px;
+  
+}
+
+  .footer-container {
+    background-color: #197288;
+    padding-bottom: 4rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    gap: 60%;
+  }
+  .footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    color: azure;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  .footer-heading a {
+    color: rgb(248, 252, 252);
+    text-decoration: none;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /*diensten*/
+
+  .reparatie{
+    background: whitesmoke;
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  .reparatietext{
+    text-align: center;
+  }
+  .reparatietext h1{
+    font-size: 40px;
+    color: #fcad46;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+
+  }
+
+  .reparatietext p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+  }
+
+  .reparatietext a{
+    background-color: #158edf;
+    color: white;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 20px;
+    display:block;
+    text-align: center;
+    margin: 20px 50px;
+    
+  }
+
+  /*contactpage*/
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #158edf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #0f78be;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .map{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 20px;
+  }
+
+  /*eerderwerk*/
+
+  .gallery{
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 30px;
+    /*border: 4px solid #2a79e0;*/
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(231, 229, 229);
+    
+  }
+
+  .discription{
+    background-color: rgb(231, 229, 229);
+    height: 50px;
+    border-radius: 5px;
+    color: #125de7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px
+  }
+
+  @media (max-width: 800px){
+    .header {
+        padding-right: 150px;
+        /*width: 100%;*/
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    .logo {
+        height: 50px;
+        width: 375px;
+        top: 100px;
+    }
+
+    .footer-container {
+        /*width: 100%;*/
+        text-align: left;
+        font-size: 20px;
+        
+    }
+    .footer {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 64px;
+    }
+    .ontstaanbreuk {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      
+    }
+
+    .topcontainer{
+      width: 100%;
+      text-align: center;
+    }
+    .topcontainer h2{
+      font-size: 20px;
+    }
+
+    .menu{
+      display: none;
+    }
+    .hamburger{
+      display: flex;
+    }
+
+    .foto{
+      margin: 0%;
+      margin-top: 25px;
+    }
+
+    .sec2container{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .gallery{
+      width: 95%;
+      margin-left: 1px;
+      
+    }
+   
+  }
+
+  @media (max-width: 1333px){
+    .card{
+      padding: 20px;
+      
+    }
+    .contactcard img{
+      width: 400px;
+    }
+
+  }
+.cta-hero, .diensten-cta {
+  text-align: center;
+  margin: 30px auto;
 }
 
 .cta-call {
-  background-color: #158edf;
-  color: white;
-  padding: 10px 20px;
-  font-size: 18px;
+  display: inline-block;
+  margin: 15px 0;
+  padding: 15px 25px;
+  background-color: #c40000;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
   border-radius: 5px;
-  margin-top: 15px;
 }
 
 .cta-call:hover {
+  background-color: #a80000;
+}
+
+.cta-trust {
+  font-size: 0.9em;
+  color: #555;
+}
+.sticky-call {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-call {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c40000;
+    text-align: center;
+    z-index: 9999;
+  }
+
+  .sticky-call a {
+    display: block;
+    padding: 18px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+.prijsblok {
+  margin: 25px 0;
+}
+
+.prijstabel {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.prijsrij {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.prijsrij:last-child {
+  border-bottom: none;
+}
+
+.prijsdienst {
+  font-weight: 600;
+}
+
+.prijsbedrag {
+  font-weight: 600;
+  color: #c40000;
+  text-align: right;
+}
+
+.prijsnotitie {
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Mobielvriendelijk */
+@media screen and (max-width: 600px) {
+  .prijsrij {
+    flex-direction: column;
+  }
+
+  .prijsbedrag {
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+/* Rustige CTA op homepage */
+.topcontainer .cta-call {
+  font-size: 0.95em;
+  padding: 8px 14px;
+  margin: 10px 0;
+}
+
+.topcontainer .cta-hero p {
+  font-size: 0.9em;
+  margin: 6px 0;
+}
+
+.topcontainer .cta-trust {
+  font-size: 0.85em;
+}
+/* Homepage CTA dezelfde blauwe stijl als andere blokken */
+.topcontainer .cta-hero {
+  background-color: #197288; /* zelfde blauw als header/footer */
+  color: #ffffff;
+  padding: 12px 15px;
+  border-radius: 0 0 20px 20px;
+}
+
+.topcontainer .cta-hero p,
+.topcontainer .cta-hero strong {
+  color: #ffffff;
+}
+
+.topcontainer .cta-call {
+  background-color: #158edf; /* zelfde blauw als knoppen */
+  color: #ffffff;
+  font-size: 0.95em;
+  padding: 8px 14px;
+}
+
+.topcontainer .cta-call:hover {
   background-color: #127dc4;
 }
 
-/* Card Styles */
-.container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
+.topcontainer .cta-trust {
+  color: #e6f2ff;
+  font-size: 0.85em;
+}
+/* Homepage tweede blok ook blauw en leesbaar maken */
+.topcontainer + .sec2container {
+  background-color: #197288; /* zelfde blauw als andere blokken */
+  color: #ffffff;
+  padding: 30px 20px;
 }
 
-.card {
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 280px;
+.topcontainer + .sec2container h2,
+.topcontainer + .sec2container h3 {
+  color: #ffffff;
 }
 
-.card-image {
-  height: 180px;
-  background-size: cover;
-  border-bottom: 2px solid #ddd;
+.topcontainer + .sec2container p,
+.topcontainer + .sec2container li {
+  color: #e6f2ff; /* iets zachter wit voor leesbaarheid */
 }
 
-.card a {
-  display: block;
-  padding: 10px;
-  background-color: #fcad46;
-  text-align: center;
-  color: white;
+/* Links in dit blok */
+.topcontainer + .sec2container a {
+  color: #ffffff;
   font-weight: bold;
-  border-radius: 0 0 10px 10px;
+  text-decoration: underline;
+}
+/* ===== HOMEPAGE: ALLE BLOKKEN IN BLAUWE HUISSTIJL ===== */
+
+/* Alle hoofdblokken op index */
+
+/* Koppen */
+.topcontainer h1,
+.topcontainer h2,
+.sec2container h2,
+.sec2container h3,
+.sec3container h2,
+.sec3container h3,
+.sec4container h2,
+.sec4container h3 {
+  color: #ffffff;
 }
 
-.card a:hover {
-  background-color: #ff9f00;
+/* Tekst */
+.topcontainer p,
+.sec2container p,
+.sec3container p,
+.sec4container p,
+.sec2container li,
+.sec3container li,
+.sec4container li {
+  color: #e6f2ff; /* zacht wit, beter leesbaar */
 }
 
-/* About Section */
-.about-section {
-  background-color: #1f7386;
-  padding: 40px;
-  color: white;
+/* Links */
+.topcontainer a,
+.sec2container a,
+.sec3container a,
+.sec4container a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-.about-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+/* CTA-knoppen blijven contrasterend */
+.topcontainer .cta-call {
+  background-color: #158edf;
+  color: #ffffff;
 }
 
-.about-text {
-  flex: 1;
+.topcontainer .cta-call:hover {
+  background-color: #127dc4;
+}
+/* === Homepage: grijze blokken zelfde stijl als blauwe CTA === */
+
+/* Bovenste grijze blok */
+.topcontainer {
+  background-color: #197288;
+  color: #ffffff;
 }
 
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
+/* Onderste grijze tekstblok direct na CTA */
+.cta-hero + .sec2container {
+  background-color: #197288;
+  color: #ffffff;
 }
 
-/* Region Section */
+/* Tekst leesbaar maken */
+.topcontainer h1,
+.topcontainer h2,
+.cta-hero + .sec2container h2,
+.cta-hero + .sec2container h3 {
+  color: #ffffff;
+}
+
+.topcontainer p,
+.cta-hero + .sec2container p {
+  color: #e6f2ff;
+}
+
+/* Links */
+.topcontainer a,
+.cta-hero + .sec2container a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+/* =========================
+   REGIO BLOK – GEÏSOLEERD
+   ========================= */
+
 .sec2container.regio-blok {
   background-color: #197288;
-  padding: 60px 20px;
-  color: white;
+  padding: 50px 20px;
 }
 
-.regio-cards {
+.sec2container.regio-blok .ontstaanbreuk {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sec2container.regio-blok h2 {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.sec2container.regio-blok p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e6f2ff;
+}
+
+.regio-links {
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
 }
 
-.regio-card {
-  background-color: #158edf;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
+.regio-links a {
+  background-color: rgba(255,255,255,0.15);
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.regio-card:hover {
-  background-color: #127dc4;
+.regio-links a:hover {
+  background-color: rgba(255,255,255,0.3);
 }
 
-/* Footer */
-.footer-container {
+/* =========================
+   RIOOLBREUKEN BLOK – GEÏSOLEERD
+   ========================= */
+
+.sec2container.rioolbreuk-blok {
   background-color: #197288;
-  color: white;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
-.footer {
+.rioolbreuk-content {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
 }
 
-.footer-heading {
+.rioolbreuk-tekst {
   flex: 1;
 }
 
-.footer-heading h2 {
-  margin-bottom: 10px;
+.rioolbreuk-tekst h2 {
+  font-size: 36px;
+  color: #ffffff;
 }
 
-.footer-heading a {
-  color: white;
-  margin-bottom: 5px;
-  display: block;
+.rioolbreuk-tekst p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #e6f2ff;
 }
 
-.footer-heading a:hover {
-  color: #fcad46;
+.rioolbreuk-afbeeldingen {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 
-/* Mobile Styles */
+.rioolbreuk-afbeeldingen .card-image {
+  height: 240px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+/* Mobiel */
 @media (max-width: 768px) {
-  .menu ul {
+  .rioolbreuk-content {
     flex-direction: column;
   }
 
-  .container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .about-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .regio-cards {
-    flex-direction: column;
-  }
-
-  .footer {
-    flex-direction: column;
-    text-align: center;
+  .rioolbreuk-afbeeldingen {
+    grid-template-columns: 1fr;
   }
 }
+/* ======================
+   HOMEPAGE BLAUWE BLOKKEN
+   ====================== */
+
+.home-blok {
+  background-color: #197288;
+  padding: 60px 30px;
+  border-radius: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.home-blok h2 {
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.home-blok p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e6f2ff;
+}
+
+/* Regio links */
+.regio-links {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.regio-links a {
+  background: rgba(255,255,255,0.18);
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.regio-links a:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+/* Rioolbreuken layout */
+.rioolbreuk-flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.rioolbreuk-tekst {
+  flex: 1;
+}
+
+.rioolbreuk-afbeeldingen {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.rioolbreuk-afbeeldingen .card-image {
+  height: 240px;
+  border-radius: 12px;
+  background-size: cover;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .rioolbreuk-flex {
+    flex-direction: column;
+  }
+
+  .rioolbreuk-afbeeldingen {
+    grid-template-columns: 1fr;
+  }
+}
+/* ==============================
+   HOMEPAGE – SCHONE BLAUWE BLOKKEN
+   ============================== */
+
+.homepage-blok {
+  background-color: #197288;
+  padding: 60px 30px;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.homepage-blok h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.homepage-blok p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #e6f2ff;
+}
+
+/* Regio knoppen */
+.homepage-regio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.homepage-regio a {
+  background-color: rgba(255,255,255,0.2);
+  padding: 10px 18px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.homepage-regio a:hover {
+  background-color: rgba(255,255,255,0.35);
+}
+
+/* Rioolbreuk layout */
+.homepage-breuk {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.breuk-tekst {
+  flex: 1;
+}
+
+.breuk-afbeeldingen {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.breuk-afbeeldingen .card-image {
+  height: 240px;
+  border-radius: 12px;
+  background-size: cover;
+}
+
+/* Mobiel */
+@media (max-width: 768px) {
+  .homepage-breuk {
+    flex-direction: column;
+  }
+
+  .breuk-afbeeldingen {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
