@@ -1159,6 +1159,84 @@
     text-align: center;
   }
 }
+/* Waarom kiezen voor Riooltechniek Les */
+.about-section {
+  background-color: #1f7386;
+  padding: 80px 20px;
+}
+
+.about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  color: #ffffff;
+}
+
+.about-text h2 {
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about-link {
+  margin-top: 25px;
+}
+
+.about-button {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 14px 28px;
+  background-color: #1e90df;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.about-button:hover {
+  background-color: #1879c7;
+}
+
+.about-sub {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.about-image {
+  flex: 0 0 360px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-top: 40px;
+  }
+}
+
+
 
 
 
