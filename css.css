@@ -22,7 +22,7 @@
   }
   /*hamburger menu*/
   .hamburger{
-    position: fixed;
+    position: flex;
     top: 20px;
     right: 30px;
     margin: auto;
@@ -1247,6 +1247,7 @@ html, body {
     margin-top: 40px;
   }
 }
+
 
 
 
