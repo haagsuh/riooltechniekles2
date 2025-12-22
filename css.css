@@ -212,7 +212,7 @@
     border-radius: 15px 15px 15px 15px;
   }
   .cartoon{
-    background-image: url(cartoon2.png);
+    background-image: url(cartoon.png);
 
   }
 
@@ -1240,6 +1240,7 @@ html, body {
     margin-top: 40px;
   }
 }
+
 
 
 
