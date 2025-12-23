@@ -275,22 +275,23 @@
   align-items: center;      /* Centreert de inhoud verticaal */
   gap: 20px;                /* Ruimte tussen de widgets */
   width: 100%;              /* Zorg ervoor dat de footer de volledige breedte heeft */
+  flex-wrap: wrap;          /* Zorg ervoor dat de widgets onder elkaar komen op kleinere schermen */
+  padding: 20px 0;          /* Ruimte boven en onder de widgets */
 }
 
 /* Zorg ervoor dat de Trustoo widget goed wordt weergegeven */
 .trustoo-widget {
-  width: 300px;  /* Stel een breedte in voor de widget */
-  height: auto;  /* Zorg dat de hoogte automatisch wordt aangepast */
+  max-width: 100%;  /* Zorg ervoor dat de widget zich aanpast aan de breedte van de container */
+  width: 300px;     /* Stel een breedte in voor de widget */
+  height: auto;     /* Zorg dat de hoogte automatisch wordt aangepast */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;  /* Zorg ervoor dat de widget gecentreerd wordt */
+  margin: 0 auto;   /* Centreer de widget in de container */
 }
 
-.trustoo-widget iframe {
-  width: 100% !important;  /* Zorg ervoor dat de iframe de juiste breedte heeft */
-  height: auto !important;
-}
+
+
 
 @media (max-width: 768px) {
   .footer {
