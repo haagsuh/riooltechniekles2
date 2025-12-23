@@ -240,12 +240,7 @@
   font-size: 18px;
 }
 
-.trustoo-widget iframe {
-  width: 100% !important; /* Zorg ervoor dat de iframe de juiste breedte heeft */
-  height: auto !important;
-}
-
-
+/* Zorg ervoor dat de footer een goede achtergrondkleur heeft en de padding goed is */
 .footer-container {
   background-color: #197288;
   padding-bottom: 4rem;
@@ -253,14 +248,15 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;  /* Ruimte tussen de secties */
-  gap: 60%;  /* Zorgt voor ruimte tussen de footer-secties */
+  justify-content: space-between;  /* Zorg ervoor dat de secties goed verdeeld worden */
+  gap: 20px;  /* Verminder de ruimte tussen de secties */
+  width: 100%;  /* Zorg ervoor dat de footer de volledige breedte heeft */
 }
 
+/* Stijl de footer-heading secties */
 .footer-heading {
   display: flex;
   flex-direction: column;
-  margin-right: 4rem;
   color: azure;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -272,20 +268,18 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Nieuwe footer3 sectie voor de widgets */
+/* Centreer de widgets in de footer3 sectie */
 .footer-heading.footer3 {
   display: flex;
-  justify-content: center;  /* Centreer de widgets horizontaal */
-  align-items: center;  /* Centreer de widgets verticaal */
-  gap: 20px;  /* Ruimte tussen de widgets */
-  flex-wrap: wrap;  /* Zorg ervoor dat de widgets niet buiten de container vallen */
-  width: 100%;  /* Zorg ervoor dat de footer de volledige breedte van de pagina heeft */
-  padding: 20px 0;  /* Ruimte boven en onder de widgets */
+  justify-content: center;  /* Centreert de inhoud horizontaal */
+  align-items: center;      /* Centreert de inhoud verticaal */
+  gap: 20px;                /* Ruimte tussen de widgets */
+  width: 100%;              /* Zorg ervoor dat de footer de volledige breedte heeft */
 }
 
-/* Zorg ervoor dat de Trustoo widget correct wordt weergegeven */
+/* Zorg ervoor dat de Trustoo widget goed wordt weergegeven */
 .trustoo-widget {
-  width: 300px;  /* Stel de breedte van de widget in */
+  width: 300px;  /* Stel een breedte in voor de widget */
   height: auto;  /* Zorg dat de hoogte automatisch wordt aangepast */
   display: flex;
   justify-content: center;
@@ -293,6 +287,10 @@
   margin: 0 auto;  /* Zorg ervoor dat de widget gecentreerd wordt */
 }
 
+.trustoo-widget iframe {
+  width: 100% !important;  /* Zorg ervoor dat de iframe de juiste breedte heeft */
+  height: auto !important;
+}
 
 @media (max-width: 768px) {
   .footer {
