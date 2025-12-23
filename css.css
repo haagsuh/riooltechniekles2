@@ -188,7 +188,7 @@
   display:block;
   text-align: left;
   flex: 1;
-  margin: 20px 50px;
+  margin: 0px 500px;
   }
 
 
@@ -208,14 +208,15 @@
 
   .sec2container.foto img{
     background-color: transparent;
-   width: 100%;
-   height: auto;
+   width: 100%;;
    border-radius: 10px;
   }
-  .sec2container .foto {
-  flex: 0 0 250px; /* Verklein de afbeelding naar 250px breed */
-  width: 250px;    /* Breedte van de afbeelding */
-  margin-left: 20px; 
+.sec2container .foto {
+    flex: auto;
+    width: 90px;
+    margin-left: 350px;
+    height: 339px;
+    margin-top: -244px; 
   }
   .cartoon2{
     background-image: url(cartoon2.png);
@@ -783,7 +784,7 @@
 }
 
 .homepage-blok p {
-  font-size: 18px;
+  font-size: 27px;
   line-height: 1.6;
   color: #e6f2ff;
 }
@@ -798,7 +799,7 @@
 
 .homepage-regio a {
   background-color: #1e90df;
-  padding: 10px 16px;
+  padding: 10px 100px;
   border-radius: 8px;
   color: #ffffff;
   font-weight: 600;
