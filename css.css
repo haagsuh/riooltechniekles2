@@ -381,7 +381,7 @@
     font-size: 30px
   }
 
-  @media (max-width: 800px){
+  @media (max-width: 768px) {
     .header {
         padding-right: 150px;
         /*width: 100%;*/
@@ -423,12 +423,31 @@
       font-size: 20px;
     }
 
-    .menu{
-      display: none;
-    }
-    .hamburger{
-      display: flex;
-    }
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+  }
+  .menu.open {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #158edf;
+    width: 100%;
+    text-align: center;
+  }
+  .menu.open li {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+  }
 
     .foto{
       margin: 0%;
@@ -447,7 +466,7 @@
    
   }
 
-  @media (max-width: 1333px){
+  
     .card{
       padding: 20px;
       
@@ -456,7 +475,7 @@
       width: 400px;
     }
 
-  }
+  
 .cta-hero, .diensten-cta {
   text-align: center;
   margin: 30px auto;
@@ -1026,54 +1045,4 @@ html, body {
     margin-top: 40px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
