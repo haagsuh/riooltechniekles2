@@ -897,3 +897,133 @@ html, body {
   border-radius: 16px;
   padding: 20px;
 }
+@media (max-width: 768px) {
+    .prijsblok {
+        margin: 15px 0;
+    }
+
+    .prijstabel {
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .prijsrij {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .prijsbedrag {
+        text-align: left;
+    }
+
+    .sec3container.regio-blok {
+        padding: 30px 10px;
+    }
+
+    .sec3container.regio-blok h2 {
+        font-size: 28px;
+    }
+
+    .sec3container.regio-blok p {
+        font-size: 16px;
+    }
+
+    .regio-links {
+        display: block;
+        gap: 10px;
+    }
+
+    .regio-links a {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+
+    .sec2container.rioolbreuk-blok {
+        padding: 30px 10px;
+    }
+
+    .rioolbreuk-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rioolbreuk-tekst h2 {
+        font-size: 28px;
+    }
+
+    .rioolbreuk-tekst p {
+        font-size: 16px;
+    }
+
+    .rioolbreuk-afbeeldingen {
+        grid-template-columns: 1fr;
+    }
+
+    .rioolbreuk-afbeeldingen .card-image {
+        height: 200px;
+    }
+}
+/* Media Queries for Mobile */
+@media (max-width: 800px) {
+    .header {
+        padding-right: 150px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 375px;
+    }
+
+    .footer-container {
+        padding-right: 115px;
+        height: 150px;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .ontstaanbreuk {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .topcontainer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .topcontainer h2 {
+        font-size: 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .foto {
+        margin: 0%;
+        margin-top: 25px;
+    }
+
+    .sec2container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .gallery {
+        width: 95%;
+        margin-left: 1px;
+    }
+}
+
+@media (max-width: 1333px) {
+    .card {
+        padding: 20px;
+    }
+}
