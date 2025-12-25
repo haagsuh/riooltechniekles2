@@ -985,12 +985,6 @@ html, body {
         cursor: pointer;
     }
 }
-
-    .logo {
-        height: 50px;
-        width: 375px;
-    }
-
     .footer-container {
         padding-right: 115px;
         height: 150px;
