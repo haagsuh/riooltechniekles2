@@ -200,7 +200,8 @@ form {
     background-image: url(cartoon2.png);
     width: 400px;
     border-radius: 10px;
-    margin-top: -110px;
+    top: 475px;
+    position: relative;
 
   }
 
@@ -940,12 +941,50 @@ html, body {
   border-radius: 16px;
   padding: 20px;
 }
+
 @media (max-width: 800px) {
-    .header {
-        padding-right: 150px;
-        text-align: center;
-        font-size: 20px;
+    .menu {
+        width: 100%; /* Zorg ervoor dat de menubalk de volledige breedte van het scherm beslaat */
+        background-color: #158edf; /* Zet de achtergrondkleur voor mobiel */
+        display: flex; /* Gebruik flexbox om de items naast elkaar te plaatsen */
+        justify-content: space-around; /* Zorg ervoor dat er ruimte is tussen de menu-items */
     }
+
+    ul {
+        display: flex; /* Maak de lijst horizontaal met flexbox */
+        margin: 0;
+        padding: 0;
+        list-style-type: none; /* Verwijder de standaard lijststijl */
+        width: 100%;
+        justify-content: space-around; /* Zorg voor gelijke ruimte tussen de menu-items */
+    }
+
+    li {
+        display: inline-block; /* Zorg ervoor dat de lijstitems naast elkaar staan */
+    }
+
+    li a {
+        display: inline-block; /* Maak de links naast elkaar */
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 20px; /* Kleinere padding voor mobiele schermen */
+        font-size: 16px; /* Kleinere tekstgrootte voor mobiel */
+    }
+
+    li a:hover {
+        background-color: #127dc4; /* Pas hover-effect aan voor mobiel */
+    }
+
+    /* Als je een hamburgermenu wilt toevoegen voor mobiel: */
+    .hamburger {
+        display: block; /* Zorg ervoor dat de hamburger zichtbaar is */
+        font-size: 30px; /* Vergroot de hamburger knop */
+        color: white; /* Zorg ervoor dat de kleur zichtbaar is op de achtergrond */
+        cursor: pointer;
+    }
+}
 
     .logo {
         height: 50px;
@@ -974,14 +1013,6 @@ html, body {
         font-size: 20px;
     }
 
-    .menu {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
     .foto {
         margin: 0%;
         margin-top: 25px;
@@ -996,7 +1027,7 @@ html, body {
         width: 95%;
         margin-left: 1px;
     }
-}
+
 
 @media (max-width: 1333px) {
     .card {
@@ -1070,39 +1101,8 @@ html, body {
         height: 200px;
     }
 }
+
 @media (max-width: 800px) {
-  /* Adjust the menu */
-  ul {
-    display: block;
-    background-color: #158edf;
-    text-align: center;
-    padding: 0;
-  }
-
-  /* Stack the menu items vertically */
-  li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  /* Adjust link size and spacing for mobile */
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 14px;
-    text-decoration: none;
-    font-size: 16px;
-  }
-
-  /* Change hover effect for smaller screens */
-  li a:hover {
-    background-color: #127dc4;
-    transform: scale(1.05);
-    transition: 0.5s;
-  }
 
   /* Adjust icon size */
   .fa-brands {
@@ -1114,9 +1114,10 @@ html, body {
     transition: 0.5s;
   }
 }
+
 @media (max-width: 800px) {
   .topcontainer {
-    background-color: rgb(231, 229, 229);
+    background-color: #197288;
     padding-bottom: 1rem;
     display: block;  /* Stack items vertically */
     text-align: center;  /* Center text for mobile */
@@ -1146,6 +1147,7 @@ html, body {
     margin: 0 auto;
   }
 }
+
 @media (max-width: 800px) {
   .card {
     width: 100%;  /* Make the card take up the full width on mobile */
@@ -1181,6 +1183,7 @@ html, body {
     border-radius: 15px 15px 15px 15px;
   }
 }
+
 @media (max-width: 800px) {
   /* Background images adjustment */
   .Reparatie-1 {
@@ -1218,12 +1221,13 @@ html, body {
     text-decoration: none;
     font-size: 24px;  /* Smaller font size for mobile */
     padding: 10px 0;  /* Adjust padding for mobile */
-    display: block;
+    display: flex;
     text-align: center;  /* Center the text for mobile */
     flex: 1;
     margin: 10px 0;  /* Adjust margin for better spacing */
   }
 }
+
 @media (max-width: 800px) {
   /* Background images adjustment */
   .breuk {
@@ -1241,24 +1245,6 @@ html, body {
   .solid-divider {
     border: 1px solid #40a2e4;
   }
-
-  /* Adjusting photo container layout for mobile */
-  .sec2container .foto {
-    flex: 1;  /* Allow the image to take available space */
-    width: 100%;  /* Make it responsive and full-width on mobile */
-    margin-left: 0;  /* Remove unnecessary margin */
-    height: auto;  /* Let the height adjust based on aspect ratio */
-    margin-top: 20px;  /* Adjust margin for better spacing */
-  }
-
-  /* Adjusting cartoon image size and position for mobile */
-  .cartoon2 {
-    background-image: url(cartoon2.png);
-    width: 100%;  /* Make the cartoon image responsive */
-    border-radius: 10px;
-    margin-top: 0;  /* Remove unnecessary negative margin */
-  }
-
   /* Solid divider remains unchanged, but we may add space if needed */
   .solid-divider {
     border: 1px solid #40a2e4;
@@ -1299,15 +1285,16 @@ html, body {
   }
 
   /* Adjust the layout of footer heading for mobile */
-  .footer-heading {
-    display: block;  /* Stack items vertically */
-    color: azure;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;  /* Slightly smaller font size for mobile */
-    text-align: center;  /* Center text on mobile */
-    margin-right: 0;  /* Remove margin on the right for mobile */
-    margin-bottom: 15px;  /* Add margin for better spacing */
-  }
+    .footer-heading
+ {
+        display: block;
+        color: azure;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        text-align: left;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 
   .footer-heading a {
     color: rgb(248, 252, 252);
@@ -1318,25 +1305,32 @@ html, body {
     margin-bottom: 10px;  /* Add margin for spacing between links */
   }
 
-  .footer-heading.footer3 {
-    display: block;  /* Stack items vertically on mobile */
-    flex-direction: column;  /* Change to column for mobile view */
-    gap: 15px;  /* Adjust gap for better spacing */
-    width: 100%;  /* Ensure it takes full width */
-    flex-wrap: wrap;
-    padding: 15px 0;  /* Adjust padding for mobile */
-  }
+    .footer-heading.footer3
+ {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 15px 0;
+        flex-direction: column-reverse;
+        left: 0px;
+        top: 720px;
+        text-align: left;
 }
 @media (max-width: 800px) {
-  .trustoo-widget {
-    max-width: 100%;  /* Ensure it takes up full width on mobile */
-    width: 90%;  /* Adjust the width to be more responsive on mobile */
-    height: auto;  /* Maintain the height proportional to the width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
+    .trustoo-widget
+
+ {
+        max-width: 100%;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        top: -142px;
+        left: 230px;
+    }
 }
 @media (max-width: 800px) {
   .reparatie {
@@ -1349,7 +1343,8 @@ html, body {
 
   .reparatietext {
     text-align: center;
-    padding: 10px;  /* Add padding for better spacing */
+    padding: 10px;
+    background-color: #197288;
   }
 
   .reparatietext h1 {
@@ -1477,15 +1472,12 @@ html, body {
   }
 
   .sticky-call {
-    display: block;  /* Show sticky call to action button on mobile */
-    position: fixed;
+    display: list-item;  /* Show sticky call to action button on mobile */
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #c40000;
     text-align: center;
-    z-index: 9999;
-    padding: 15px 0;
   }
 
   .sticky-call a {
@@ -1583,7 +1575,7 @@ html, body {
 }
 @media (max-width: 800px) {
   .homepage-blok-sector1 {
-    background-color: #f0f0f0;  /* Keep background color */
+    background-color: #197288;  /* Keep background color */
     padding: 20px;  /* Adjust padding for mobile */
   }
 
@@ -1601,7 +1593,6 @@ html, body {
 /* Sectie 2 - homepage-blok-sector2 */
 @media (max-width: 800px) {
   .homepage-blok-sector2 {
-    background-color: #e0e0e0;  /* Keep background color */
     padding: 20px;  /* Adjust padding for mobile */
   }
 
@@ -1635,7 +1626,7 @@ html, body {
 }
 @media (max-width: 800px) {
   .homepage-regio {
-    display: block;  /* Stack the links vertically on mobile */
+    display: flex;  /* Stack the links vertically on mobile */
     gap: 20px;  /* Reduce the gap between links for mobile */
     margin-top: 20px;  /* Adjust margin for better alignment */
   }
@@ -1679,17 +1670,7 @@ html, body {
     border-radius: 12px;
   }
 }
-@media (max-width: 800px) {
-  .topcontainer {
-    font-size: 20px;  /* Adjust font size for smaller screens */
-    padding: 20px;  /* Adjust padding for better alignment */
-  }
 
-  .topcontainer h1 {
-    font-size: 24px;  /* Reduce the font size of the heading */
-    text-align: center;  /* Ensure heading is centered */
-  }
-}
 
 /* blauw-sectie */
 @media (max-width: 800px) {
@@ -1769,12 +1750,11 @@ html, body {
   }
 }
 @media (max-width: 800px) {
-
-  /* .about-section */
+/* .about-section */
   .about-section {
     padding: 40px 15px;  /* Verklein de padding voor mobiel */
   }
-
+}
   /* .about-inner */
   .about-inner {
     flex-direction: column;  /* Verander de richting naar verticaal op mobiel */
@@ -1825,5 +1805,8 @@ html, body {
     height: auto;  /* Behoud de verhoudingen van de afbeelding */
     border-radius: 8px;  /* Verklein de afronding van de hoeken */
     padding: 10px;  /* Voeg wat padding toe rond de afbeelding */
+  }
+  .cartoon2 {
+    display: none;
   }
 }
