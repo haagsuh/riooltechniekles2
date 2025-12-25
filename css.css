@@ -1070,7 +1070,7 @@ html, body {
         height: 200px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Adjust the menu */
   ul {
     display: block;
@@ -1114,7 +1114,7 @@ html, body {
     transition: 0.5s;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .topcontainer {
     background-color: rgb(231, 229, 229);
     padding-bottom: 1rem;
@@ -1146,7 +1146,7 @@ html, body {
     margin: 0 auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .card {
     width: 100%;  /* Make the card take up the full width on mobile */
     margin: 15px 0;  /* Reduced margin for mobile */
@@ -1181,7 +1181,7 @@ html, body {
     border-radius: 15px 15px 15px 15px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Background images adjustment */
   .Reparatie-1 {
     background-image: url(reparatiee.jpg);
@@ -1224,7 +1224,7 @@ html, body {
     margin: 10px 0;  /* Adjust margin for better spacing */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Background images adjustment */
   .breuk {
     background-image: url(breuk.jpg);
@@ -1265,7 +1265,7 @@ html, body {
     margin-top: 20px;  /* Add some space above the divider */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Ontstaanbreuk Section */
   .ontstaanbreuk {
     padding-left: 20px;  /* Reduce left padding on mobile */
@@ -1327,7 +1327,7 @@ html, body {
     padding: 15px 0;  /* Adjust padding for mobile */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .trustoo-widget {
     max-width: 100%;  /* Ensure it takes up full width on mobile */
     width: 90%;  /* Adjust the width to be more responsive on mobile */
@@ -1338,7 +1338,7 @@ html, body {
     margin: 0 auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .reparatie {
     background: whitesmoke;
     height: auto;
@@ -1377,7 +1377,7 @@ html, body {
     margin: 10px 30px;  /* Adjust margin for mobile */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Style adjustments for text inputs, selects, and textareas */
   input[type=text], select, textarea {
     width: 100%; 
@@ -1405,7 +1405,7 @@ html, body {
     background-color: #0f78be;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Container adjustments for mobile */
   .container {
     border-radius: 5px;
@@ -1447,7 +1447,7 @@ html, body {
     text-align: center;  /* Center text */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .cta-hero, .diensten-cta {
     text-align: center;
     margin: 20px auto;  /* Adjust margin for better spacing on mobile */
@@ -1497,7 +1497,7 @@ html, body {
     text-decoration: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   /* Home block adjustments for mobile */
   .home-blok {
     padding: 40px 20px;  /* Adjust padding for mobile */
@@ -1538,7 +1538,7 @@ html, body {
     background: #1e90df;  /* Maintain hover effect */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .rioolbreuk-flex {
     flex-direction: column;  /* Stack the elements vertically on mobile */
     gap: 20px;  /* Adjust gap between elements */
@@ -1581,7 +1581,7 @@ html, body {
     color: #e6f2ff;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .homepage-blok-sector1 {
     background-color: #f0f0f0;  /* Keep background color */
     padding: 20px;  /* Adjust padding for mobile */
@@ -1599,7 +1599,7 @@ html, body {
 }
 
 /* Sectie 2 - homepage-blok-sector2 */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .homepage-blok-sector2 {
     background-color: #e0e0e0;  /* Keep background color */
     padding: 20px;  /* Adjust padding for mobile */
@@ -1633,7 +1633,7 @@ html, body {
     color: #ffffff;   /* Keep color */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .homepage-regio {
     display: block;  /* Stack the links vertically on mobile */
     gap: 20px;  /* Reduce the gap between links for mobile */
@@ -1657,7 +1657,7 @@ html, body {
 }
 
 /* homepage-breuk */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .homepage-breuk {
     display: block;  /* Stack the content vertically on mobile */
     gap: 20px;  /* Reduce the gap between elements */
@@ -1679,7 +1679,7 @@ html, body {
     border-radius: 12px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .topcontainer {
     font-size: 20px;  /* Adjust font size for smaller screens */
     padding: 20px;  /* Adjust padding for better alignment */
@@ -1692,21 +1692,21 @@ html, body {
 }
 
 /* blauw-sectie */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .blauw-sectie {
     padding: 60px 20px;  /* Adjust padding to fit smaller screens */
   }
 }
 
 /* regio-blok */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .regio-blok {
     padding: 40px 20px;  /* Reduce padding for mobile screens */
   }
 }
 
 /* regio-inner */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .regio-inner {
     padding: 30px 20px;  /* Adjust padding */
     width: 100%;  /* Ensure the container takes up full width */
@@ -1723,7 +1723,7 @@ html, body {
 }
 
 /* regio-cards and cards */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .regio-cards {
     display: block;  /* Stack cards vertically */
     gap: 20px;  /* Increase gap between cards */
@@ -1736,7 +1736,7 @@ html, body {
     font-size: 18px;  /* Adjust font size for better readability */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   html, body {
     height: auto;  /* Remove height: 100% for small screens */
     margin: 0;
@@ -1768,7 +1768,7 @@ html, body {
     margin: 10px 0;  /* Add margin for spacing */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   /* .about-section */
   .about-section {
