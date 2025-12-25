@@ -1105,7 +1105,7 @@ html, body {
     .herstel { background-image: url(reparatie.jpg); }
 
     /* 5. FLEX NAAR KOLOMMEN (Stacking) */
-    .about-inner, .rioolbreuk-content, .rioolbreuk-flex, .prijsrij, .footer, .reparatie-content {
+    .about-inner, .rioolbreuk-content, .rioolbreuk-flex, .prijsrij, .reparatie-content {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -1128,7 +1128,7 @@ html, body {
         font-size: 16px; /* Voorkomt auto-zoom op iPhone */
     }
 
-    input[type=submit], .cta-call, .card a, .about-button, .regio-links a, .homepage-regio a {
+    input[type=submit], .cta-call, .card a, .about-button, .regio-links a, .regio-card {
         background-color: #158edf;
         color: white;
         font-weight: bold;
@@ -1141,27 +1141,20 @@ html, body {
         transition: 0.3s;
     }
 
-    /* 7. FOOTER & WIDGETS */
-    .footer-container { 
-        padding-bottom: 80px; 
-        background-color: #197288; 
-    } /* Ruimte voor sticky call */
-
-    .footer-heading {
-        text-align: center;
-        margin: 10px 0;
-        font-size: 18px;
-    }
-
-    .trustoo-widget {
-        max-width: 90%;
-        width: 100%;
-        margin: 20px auto;
-        position: static; /* Verwijdert foutieve absolute positie */
-        display: flex;
-        justify-content: center;
-    }
-
+    .homepage-regio {
+    display: flex;
+    flex-direction: column; /* Zet de links onder elkaar in plaats van naast elkaar */
+    gap: 12px;              /* Veel kleinere tussenruimte voor mobiel */
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 10px;        /* Zorgt dat ze niet strak tegen de rand aanplakken */
+    box-sizing: border-box;
+}
+.homepage-regio a {
+    width: 100%;            /* Zorgt dat de knoppen de volledige breedte vullen */
+    display: block;
+    text-align: center;
+}
     .sticky-call {
         position: fixed;
         bottom: 0;
@@ -1184,5 +1177,71 @@ html, body {
     .map { height: 270px; width: 100%; }
     .gallery { width: 100%; padding: 10px; background: #eee; }
     .section-divider, .solid-divider { height: 2px; margin: 20px 0; background: #40a2e4; border: none; }
-    .cartoon2 { display: none; }
-}
+    .cartoon2 { 
+    display: none; }
+  .footer {
+    display: flex;
+    flex-direction: column; /* Stapel de kolommen verticaal */
+    gap: 25px; 
+    width: 100%;
+    text-align: center;
+    padding: 30px 15px 5rem 15px; /* Extra ruimte onderaan voor de sticky call */
+  }
+
+  .footer-heading {
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px; /* Iets kleiner voor mobiel */
+    text-align: center;
+    margin-right: 0; /* Verwijder de desktop marge */
+  }
+  .footer-heading.footer1 {
+    color: rgb(248, 252, 252);
+    text-decoration: none;
+    font-size: 22px; /* Iets kleiner voor mobiel */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0; /* Verwijder de desktop marge */
+    padding: 8px 0;
+    display: block;
+  }
+
+  .footer-heading.footer2 {
+    color: rgb(248, 252, 252);
+    text-decoration: none;
+    font-size: 19px; /* Verkleind zodat namen op één regel passen */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0; /* Verwijder de desktop marge */
+    padding: 8px 0;
+    display: block;
+  }
+
+  .footer-heading.footer3 {
+    display: flex;
+    flex-direction: column; /* Ook de icons/links onderaan verticaal */
+    gap: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  /* Trustoo widget centreren op de S25 */
+  .trustoo-widget {
+    max-width: 90%; 
+    width: 100%;     
+    height: auto;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;  
+  }
+  .footer-container {
+    padding-right: 15px;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 4rem; /* Extra ruimte onderaan voor de sticky call */
+    }
+  }
