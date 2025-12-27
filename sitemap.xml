@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Hoofdpagina's -->
   <url>
     <loc>https://www.riooltechniekles.nl/</loc>
     <lastmod>2025-01-01</lastmod>
@@ -36,5 +37,91 @@
     <priority>0.7</priority>
   </url>
 
-</urlset>
+  <url>
+    <loc>https://www.riooltechniekles.nl/prijzen.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
+  <!-- Regio pagina's -->
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-delft.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-rijswijk.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-zoetermeer.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-westland.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Den Haag + subregio's -->
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-den-haag.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-scheveningen.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-kijkduin.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-loosduinen.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Omliggende plaatsen -->
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-leidschendam.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-voorburg.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.riooltechniekles.nl/riool-ontstoppen-pijnacker.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
