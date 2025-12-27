@@ -174,11 +174,13 @@ html, body {
 .homepage-blok-sector2 {
      background-color: #197288;
       padding: 50px; 
-      color: white; 
+      color: white;
+      text-align: center; 
 }
 .sec4container { 
     background-color: #197288; 
-    padding: 60px 20px; 
+    padding: 60px 20px;
+    text-align: center; 
 }
 
 .homepage-blok-sector3 { 
