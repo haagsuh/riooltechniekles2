@@ -87,6 +87,84 @@ html, body {
     padding: 40px 20px;
 }
 
+.block {
+  max-width: 520px;
+  margin: 2.5rem auto;
+  padding: 1.75rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* ===== TOOLS ===== */
+.block-tools {
+  background: #197288;
+  border-left: 6px solid #ff9800;
+}
+
+.block-tools h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.block-tools ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ← dit is de sleutel */
+}
+
+.block-tools li {
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* icoon + tekst samen centreren */
+  gap: 10px;
+  margin-bottom: 12px;
+  width: 100%;               /* ← dit is de sleutel */
+  text-align: center;
+}
+
+.block-tools li::before {
+  content: "🛠️";
+  flex-shrink: 0;
+}
+
+/* ===== CHECK ===== */
+.block-check {
+  background: #197288;
+  border-left: 6px solid #4caf50;
+}
+
+.block-check h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.block-check ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ← dit is de sleutel */
+}
+
+.block-check li {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.block-check li::before {
+  content: "✔";
+  color: #4caf50;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+
 /* De sector-kleuren die je in de HTML gebruikt */
 .homepage-blok-sector1 { 
     background-color: #197288; 
@@ -181,6 +259,8 @@ h1, h2, .topcontainer h1 { font-size: 32px; margin: 10px 0; color: #fcad46; }
     justify-content: center;
     gap: 15px; /* Ruimte tussen de knoppen */
     flex-wrap: wrap; /* Zorgt dat ze op mobiel onder elkaar springen */
+    list-style: none;
+    padding: 0;
     margin-top: 25px;
 }
 
@@ -199,6 +279,32 @@ h1, h2, .topcontainer h1 { font-size: 32px; margin: 10px 0; color: #fcad46; }
 
 .homepage-regio a:hover {
     background-color: #158edf; /* Iets donkerder bij hover */
+}
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.contact-btn {
+  background-color: #1e90df;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  min-width: 220px;
+  text-align: center;
+
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: #158edf;
+  transform: translateY(-2px);
 }
 
 .cartoon2 {
@@ -488,10 +594,18 @@ h1, h2, .topcontainer h1 { font-size: 32px; margin: 10px 0; color: #fcad46; }
     }
         .homepage-regio {
         flex-direction: column;
-        gap: 10px;
+        gap: 14px;
     }
-    .homepage-regio a {
-        width: 100%;
-        min-width: unset;
-    }
+  .homepage-regio a {
+    padding: 14px 18px;     /* grotere klikzone */
+    line-height: 1.4;       /* rustiger tekst */
+    border-radius: 8px;     /* iets vriendelijker op mobiel */
+  }
+    .homepage-regio li a {
+    padding: 14px 18px;
+    line-height: 1.4;
+    border-radius: 8px;
+    display: block;
+  }
+
 }
