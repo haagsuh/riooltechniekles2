@@ -2,6 +2,19 @@
 <html lang="nl">
 <head>
 <meta charset="utf-8" />
+<meta http-equiv="Content-Security-Policy"
+      content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://static.trustoo.nl;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+        font-src 'self'
+          https://fonts.gstatic.com
+          https://cdnjs.cloudflare.com
+          https://static.trustoo.nl;
+        img-src 'self' data: https://static.trustoo.nl;
+        connect-src 'self' https://trustoo.nl;
+        frame-src 'self';
+      ">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
@@ -14,7 +27,7 @@
 <meta name="geo.placename" content="Den Haag" />
 
 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
 <link rel="icon" type="image/x-icon" href="converted_image.ico" />
@@ -56,12 +69,12 @@
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">CONTACT</a></li>
       <li><a href="prijzen.html">PRIJZEN</a></li>
-      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
     </ul>
 </div>
 
-
+<main id="main-content"></main>
 <div class="topcontainer">
 <section>
 <h1>Riool ontstoppen in Den Haag</h1>
@@ -167,7 +180,7 @@ en duidelijk advies over de beste oplossing.
 <hr class="solid-divider" />
 
 
-
+</main>
 
 <div class="footer-container">
   <div class="footer">
