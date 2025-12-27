@@ -97,8 +97,8 @@ html, body {
 
 /* ===== TOOLS ===== */
 .block-tools {
-  background: #197288;
-  border-left: 6px solid #ff9800;
+  background: #055f08;
+  border-left: 6px
 }
 
 .block-tools h2 {
@@ -132,8 +132,8 @@ html, body {
 
 /* ===== CHECK ===== */
 .block-check {
-  background: #197288;
-  border-left: 6px solid #4caf50;
+  background: #055f08;
+  border-left: 6px 
 }
 
 .block-check h2 {
@@ -159,7 +159,7 @@ html, body {
 
 .block-check li::before {
   content: "✔";
-  color: #4caf50;
+  color: #00ff08;
   font-weight: bold;
   flex-shrink: 0;
 }
