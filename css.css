@@ -85,6 +85,7 @@ html, body {
     color: white;
     text-align: center;
     padding: 40px 20px;
+    font-size: 20px;
 }
 
 .block {
@@ -170,12 +171,14 @@ html, body {
     background-color: #197288; 
     padding: 40px; 
     color: white;
+    font-size: 20px;
  }
 .homepage-blok-sector2 {
      background-color: #197288;
       padding: 50px; 
       color: white;
-      text-align: center; 
+      text-align: center;
+      font-size: 20px; 
 }
 .sec4container { 
     background-color: #197288; 
