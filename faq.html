@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="css.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
   <link rel="icon" type="image/x-icon" href="converted_image.ico" />
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -50,8 +50,14 @@
   },
 
   "areaServed": [
-    { "@type": "Place", "name": "Den Haag" },
-    { "@type": "AdministrativeArea", "name": "Zuid-Holland" }
+    { "@type": "City", "name": "Den Haag" },
+    { "@type": "City", "name": "Rijswijk" },
+    { "@type": "City", "name": "Delft" },
+    { "@type": "City", "name": "Zoetermeer" },
+    { "@type": "AdministrativeArea", "name": "Westland" },
+    { "@type": "City", "name": "Leidschendam" },
+    { "@type": "City", "name": "Voorburg" },
+    { "@type": "City", "name": "Pijnacker" }
   ],
 
   "openingHoursSpecification": {
@@ -79,7 +85,7 @@
       "name": "Wat kost riool ontstoppen?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "De kosten voor het ontstoppen van een riool variëren afhankelijk van de ernst van de verstopping. Raadpleeg onze prijzenpagina voor meer informatie."
+        "text": "De kosten voor het ontstoppen van een riool variëren afhankelijk van de ernst van de verstopping. Raadpleeg onze prijzenpagina voor een overzicht."
       }
     },
     {
@@ -127,7 +133,7 @@
       "name": "In welke plaatsen zijn jullie actief?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Wij zijn actief in Den Haag, Rijswijk, Delft, Westland en Zoetermeer en omgeving."
+        "text": "Wij zijn actief in Den Haag, Rijswijk, Delft, Westland en Zoetermeer en omgeving (± 60 km)."
       }
     },
     {
@@ -137,6 +143,26 @@
         "@type": "Answer",
         "text": "Bij acute rioolproblemen adviseren wij om direct telefonisch contact op te nemen."
       }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.riooltechniekles.nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Veelgestelde vragen",
+      "item": "https://www.riooltechniekles.nl/faq.html"
     }
   ]
 }
@@ -154,7 +180,7 @@
 
   <!-- DESKTOP MENU -->
   <div class="menu">
-                <main id="main-content"></main>
+                <main id="main-content">
     <ul>
       <li><a href="index.html">HOME</a></li>
       <li><a href="diensten.html">DIENSTEN</a></li>
@@ -181,69 +207,83 @@
         en omliggende plaatsen.
       </p>
 
-      <h3>Wat kost riool ontstoppen?</h3>
-      <p>
-       de kosten voor het ontstoppen van een riool varieren afhankelijk van de 
-       ernst van de verstopping raadpleeg onze <a href="prijzen.html">prijzenpagina</a>.
-      </p>
-        <hr class="solid-divider" />
+<h3>Wat kost riool ontstoppen?</h3>
+<p>
+De kosten voor het ontstoppen van een riool variëren afhankelijk van de
+oorzaak en ernst van de verstopping.
+Bekijk onze <a href="prijzen.html">prijzenpagina</a> voor meer informatie.
+</p>
 
-      <h3>Hoe snel kunnen jullie ter plaatse zijn?</h3>
-      <p>
-        Bij spoedgevallen zijn wij vaak dezelfde dag nog ter plaatse in Den Haag
-        en omgeving.
-      </p>
+<hr class="solid-divider" />
 
-        <hr class="solid-divider" />
+<h3>Hoe snel kunnen jullie ter plaatse zijn?</h3>
+<p>
+Bij spoedgevallen zijn wij vaak dezelfde dag nog ter plaatse in
+Den Haag en omgeving.
+</p>
 
-      <h3>Werken jullie ook ’s avonds of in het weekend?</h3>
-      <p>
-        Ja, bij spoed zijn wij ook buiten reguliere werktijden inzetbaar.
-      </p>
+<hr class="solid-divider" />
 
-        <hr class="solid-divider" />
+<h3>Werken jullie ook ’s avonds of in het weekend?</h3>
+<p>
+Ja, bij spoed zijn wij ook buiten reguliere werktijden inzetbaar,
+zoals in de avond of het weekend.
+</p>
 
-      <h3>Wat veroorzaakt een verstopt riool?</h3>
-      <p>
-        Veelvoorkomende oorzaken zijn vet- en zeepresten, haren, boomwortels,
-        verzakkingen of slijtage van het rioolstelsel.
-      </p>
+<hr class="solid-divider" />
 
-        <hr class="solid-divider" />
+<h3>Wat veroorzaakt een verstopt riool?</h3>
+<p>
+Veelvoorkomende oorzaken zijn vet- en zeepresten, haren, etensresten,
+boomwortels, verzakkingen of slijtage van het rioolstelsel.
+</p>
 
-      <h3>Is een camera-inspectie altijd nodig?</h3>
-      <p>
-        Niet altijd. Bij terugkerende of onduidelijke problemen kan een
-        camera-inspectie nodig zijn om de oorzaak vast te stellen.
-      </p>
-        <hr class="solid-divider" />
+<hr class="solid-divider" />
 
-      <h3>Doen jullie ook rioolonderhoud?</h3>
-      <p>
-        Ja, wij bieden periodiek rioolonderhoud om verstoppingen en schade
-        te voorkomen.
-      </p>
-        <hr class="solid-divider" />
+<h3>Is een camera-inspectie altijd nodig?</h3>
+<p>
+Niet altijd. Bij terugkerende of onduidelijke rioolproblemen kan een
+camera-inspectie nodig zijn om de exacte oorzaak vast te stellen.
+</p>
 
-      <h3>In welke plaatsen zijn jullie actief?</h3>
-      <p>
-        Wij zijn actief in Den Haag, Rijswijk, Delft, Westland en Zoetermeer
-        en omgeving (± 60 km).
-      </p>
-        <hr class="solid-divider" />
+<hr class="solid-divider" />
 
-      <h3>Wat moet ik doen bij spoed?</h3>
-      <p>
-        Bij acute rioolproblemen adviseren wij om direct telefonisch contact
-        op te nemen.
-      </p>
+<h3>Doen jullie ook rioolonderhoud?</h3>
+<p>
+Ja, wij bieden periodiek rioolonderhoud aan om verstoppingen en schade
+aan het riool te voorkomen.
+</p>
+
+<hr class="solid-divider" />
+
+<h3>In welke plaatsen zijn jullie actief?</h3>
+<p>
+Wij zijn actief in Den Haag, Rijswijk, Delft, Westland en Zoetermeer
+en omgeving (ongeveer 60 km).
+</p>
+
+<hr class="solid-divider" />
+
+<h3>Wat moet ik doen bij spoed?</h3>
+<p>
+Bij acute rioolproblemen adviseren wij om direct telefonisch contact
+met ons op te nemen, zodat wij snel kunnen helpen.
+</p>
 
       <a href="contact.html">Neem contact op</a>
-
-    </div>
-  </section>
+      <div class="contact-buttons">
+  <a href="prijzen.html" class="contact-btn">
+    💰 Prijzen rioolontstoppen 💰
+  </a>
+</div>
+<div class="contact-buttons">
+  <a href="diensten.html" class="contact-btn">
+    🛠️ bekijk ook onze diensten pagina 🛠️
+  </a>
+</div>
 </main>
-  <!-- FOOTER -->
+<hr class="solid-divider" />
+</section>
 <div class="footer-container">
   <div class="footer">
     <div class="footer-heading footer1">

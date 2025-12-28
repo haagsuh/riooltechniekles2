@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
   <link rel="icon" type="image/x-icon" href="converted_image.ico" />
-  <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -48,8 +48,14 @@
   },
 
   "areaServed": [
-    { "@type": "Place", "name": "Den Haag" },
-    { "@type": "AdministrativeArea", "name": "Zuid-Holland" }
+    { "@type": "City", "name": "Den Haag" },
+    { "@type": "City", "name": "Rijswijk" },
+    { "@type": "City", "name": "Delft" },
+    { "@type": "City", "name": "Zoetermeer" },
+    { "@type": "AdministrativeArea", "name": "Westland" },
+    { "@type": "City", "name": "Leidschendam" },
+    { "@type": "City", "name": "Voorburg" },
+    { "@type": "City", "name": "Pijnacker" }
   ],
 
   "openingHoursSpecification": {
@@ -77,6 +83,26 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.riooltechniekles.nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Onderhoud",
+      "item": "https://www.riooltechniekles.nl/onderhoud.html"
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -88,7 +114,7 @@
 
 
   <div class="menu">
-  <main id="main-content"></main>
+  <main id="main-content">
     <ul>
       <li><a href="index.html">HOME</a></li>
       <li><a href="diensten.html">DIENSTEN</a></li>
