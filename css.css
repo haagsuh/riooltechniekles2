@@ -204,6 +204,7 @@ html, body {
     padding: 40px; 
     color: white;
     font-size: 20px;
+    text-align: center;
  }
 .homepage-blok-sector2 {
      background-color: #197288;
@@ -249,7 +250,7 @@ html, body {
 /* De fix voor het uitrekken: gebruik een aspect ratio hack */
 .breuk-afbeeldingen .card-image {
     height: 0; 
-    padding-top: 66.66%; /* Dit zorgt voor een 3:2 beeldverhouding (standaard foto verhouding) */
+    padding-top: 45.66%; /* Dit zorgt voor een 3:2 beeldverhouding (standaard foto verhouding) */
     background-size: cover;
     background-position: center;
     border-radius: 12px;
@@ -267,7 +268,7 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
 
 .homepage-blok-sector1 p a {
     display: inline-block;        /* Zorgt ervoor dat we padding en margins kunnen gebruiken */
-    background-color: #fcad46;    /* De gewenste oranje kleur */
+    background-color: #1e90df;    /* De gewenste oranje kleur */
     color: white;                 /* Witte, contrasterende tekst */
     padding: 10px 20px;           /* Ruimte rondom de tekst */
     text-decoration: none;        /* Haalt de onderstreping weg */
@@ -356,6 +357,7 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
     text-align: center;
 }
 
+
 .sec2container.blauwblok {
     background-color: #197288;
     display: flex;             /* Zorgt dat elementen naast elkaar staan */
@@ -438,6 +440,34 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
   width: 100%;              
   flex-wrap: wrap;          
   padding: 20px 0;         
+}
+.footer-heading.footer1 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #ffffff;
+}
+
+.footer-heading.footer1 h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffb400; /* zelfde accentkleur als "Contact" */
+}
+
+.footer-heading.footer1 p {
+  margin: 0;
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+.footer-heading.footer1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-heading.footer1 a:hover {
+  text-decoration: underline;
 }
 
 
