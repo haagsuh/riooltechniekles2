@@ -196,6 +196,96 @@ html, body {
   content: "🏠";
   flex-shrink: 0;
 }
+.block-point {
+  background: #055f08;
+  border-left: 6px
+}
+
+.block-point h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.block-point ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centreren */
+}
+
+.block-point li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.block-point li::before {
+  content: "👉";
+  flex-shrink: 0;
+}
+.block-kruis {
+  background: #6b0000;
+  border-left: 6px 
+}
+
+.block-kruis h2 {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.block-kruis ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block-kruis li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.block-kruis li::before {
+  content: "❌";
+  flex-shrink: 0;
+}
+.faq-table {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 1.5rem;
+}
+
+.faq-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  background:#01023d;
+  border-left: 5px solid;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.faq-q {
+  font-weight: 600;
+}
+
+.faq-a {
+  line-height: 1.5;
+}
 
 
 /* De sector-kleuren die je in de HTML gebruikt */
@@ -674,5 +764,10 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
     border-radius: 8px;
     display: block;
   }
+  @media (max-width: 768px) {
+  .faq-row {
+    grid-template-columns: 1fr;
+  }
+}
 
 }
