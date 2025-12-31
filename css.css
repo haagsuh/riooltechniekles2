@@ -4,7 +4,7 @@ html, body {
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: 'Gill Sans', sans-serif;
-    background-color: #ffffff;
+   background-color: #197288;
 }
 
 /* 2. HEADER & MENU (De 'Riooltechniek Les' stijl) */
@@ -87,13 +87,35 @@ html, body {
     padding: 40px 20px;
     font-size: 20px;
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+  width: fit-content;
+  padding: 12px 24px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 
 .block {
   max-width: 520px;
   margin: 2.5rem auto;
   padding: 1.75rem;
   border-radius: 8px;
-  text-align: left;
+  text-align: center;
+  color: white;
 }
 
 /* ===== TOOLS ===== */
@@ -465,6 +487,8 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
     flex-wrap: wrap;
     padding: 40px 0;
     background-color: #197288;
+    color: white;
+    font-size: 25px;
 }
 
 .card {
@@ -642,11 +666,11 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
 }
 .container h1 {
     font-size: 40px;
-    color: #fcad46;
+    color: white;
 }
 .container h2 {
     font-size: 32px;
-    color: white;
+    color: #fcad46;
 }
 .gallery-wrapper {
     display: grid;
@@ -710,6 +734,73 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
   margin-top: 10px;
   color: #555;
 }
+.project-block {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+.swiper {
+  margin: 2rem auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slide-caption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #00ff08;
+  background: rgba(0,0,0,0.65);
+  padding: 8px 12px;
+  border-radius: 6px;
+  max-width: 90%;
+}
+
+.project-block h2 {
+  margin-bottom: 10px;
+}
+
+.project-intro {
+  margin-bottom: 20px;
+  max-width: 800px;
+  color: white
+}
+
+.project-swiper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.project-swiper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+.project-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-details li {
+  margin-bottom: 8px;
+}
+
+.project-type {
+  margin-top: 15px;
+  font-weight: bold;
+}
 .werk-blok {
   margin: 3rem 0;
 }
@@ -718,19 +809,10 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
   text-align: center;
   max-width: 800px;
   margin: 0 auto 1.5rem;
+  color:white
 }
-
-.werk-slider img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-
-.slide-caption {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  text-align: center;
-  color: #333;
+.werk-blok h2 {
+text-align: center;
 }
 
 
@@ -787,9 +869,32 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
     border-radius: 8px;
     display: block;
   }
+  @media (max-width: 767px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* swipe is genoeg */
+  }
+
+  .slide-caption {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .werk-intro,
+  .project-intro {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
   @media (max-width: 768px) {
   .faq-row {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px; /* voorkomt iOS zoom */
   }
 }
 
