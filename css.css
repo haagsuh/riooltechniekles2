@@ -710,6 +710,29 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
   margin-top: 10px;
   color: #555;
 }
+.werk-blok {
+  margin: 3rem 0;
+}
+
+.werk-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.werk-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.slide-caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #333;
+}
+
 
 /* 7. MOBIELE VERSIE (Jouw exact werkende code) */
 @media screen and (max-width: 480px) {
