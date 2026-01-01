@@ -439,14 +439,18 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
 }
 
 .contact-btn {
+  display: inline-block;
   background-color: #1e90df;
   color: #ffffff;
+  font-size: 1rem;
   padding: 12px 22px;
-  border-radius: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
   min-width: 220px;
   text-align: center;
+  box-sizing: border-box;
 
   transition: background-color 0.3s, transform 0.1s;
 }
