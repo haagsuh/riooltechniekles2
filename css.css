@@ -836,6 +836,20 @@ text-align: center;
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: #00ff08; /* passend bij je accentkleur */
+  background: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.swiper-pagination-bullet {
+  background: rgba(0,255,8,0.5);
+}
+.swiper-pagination-bullet-active {
+  background: #00ff08;
+}
 
 
 
@@ -919,6 +933,20 @@ text-align: center;
   .contact-form input,
   .contact-form textarea {
     font-size: 16px; /* voorkomt iOS zoom */
+  }
+}
+@media (max-width: 768px) {
+  .contact-btn {
+    width: 100%; /* vult schermbreedte op mobiel */
+  }
+
+  .homepage-regio {
+    flex-direction: column; /* regio-links onder elkaar */
+  }
+
+  .homepage-regio li {
+    flex: 1 1 100%;
+    min-width: auto;
   }
 }
 
