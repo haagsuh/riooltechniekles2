@@ -3,18 +3,43 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="Content-Security-Policy"
-      content="
-        default-src 'self';
-        script-src 'self' 'unsafe-inline' https://static.trustoo.nl;
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com;
-        font-src 'self'
-          https://fonts.gstatic.com
-          https://cdnjs.cloudflare.com
-          https://static.trustoo.nl;
-        img-src 'self' data: https://static.trustoo.nl;
-        connect-src 'self' https://trustoo.nl;
-        frame-src 'self';
-      ">
+content="
+  default-src 'self';
+
+  script-src
+    'self'
+    'unsafe-inline'
+    'unsafe-eval'
+    https://static.trustoo.nl;
+
+  style-src
+    'self'
+    'unsafe-inline'
+    https://fonts.googleapis.com
+    https://static.trustoo.nl
+    https://cdnjs.cloudflare.com;
+
+  font-src
+    'self'
+    https://fonts.gstatic.com
+    https://cdnjs.cloudflare.com
+    https://static.trustoo.nl;
+
+  img-src
+    'self'
+    data:
+    https://static.trustoo.nl
+    https://trustoo.nl;
+
+  connect-src
+    'self'
+    https://trustoo.nl
+    https://static.trustoo.nl;
+
+  frame-src
+    https://trustoo.nl
+    https://static.trustoo.nl;
+">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
@@ -364,18 +389,11 @@ riool ontstoppen in Den Haag en omgeving
     <!-- Nieuwe footer3 voor de widgets -->
     <div class="footer-heading footer3">
       <!-- Trustoo widget -->
-      <script async src="https://static.trustoo.nl/widget/widget_v2.js"></script>
-      <div class="trustoo-widget"
+      <script async src="https://static.trustoo.nl/widget/widget_review.js"></script>
+<div class="trustoo-review-widget"
            data-id="376149"
-           data-country-code="NL"
-           data-badge="hidden"
-           data-quote="hidden"
-           data-size="large"
-           data-type="portrait"
-           data-border="shadow"
-           data-theme="dark"
-           data-background="default"
-           data-google="default">
+           data-language-code="nl"
+           data-country-code="NL"></div>
     </div>
     <div class="footer-heading footer2">
       <a href="https://www.w3schools.com">KvK: 96173483</a>
