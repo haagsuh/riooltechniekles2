@@ -296,6 +296,7 @@ html, body {
   grid-template-columns: 1fr 2fr;
   gap: 16px;
   background:#01023d;
+  color: white;
   border-left: 5px solid;
   padding: 16px;
   border-radius: 6px;
