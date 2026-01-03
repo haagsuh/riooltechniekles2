@@ -309,6 +309,13 @@ html, body {
 .faq-a {
   line-height: 1.5;
 }
+.copyright-bar {
+  background-color: #127dc4;   /* kleur van het balkje */
+  color: #fff;              /* tekstkleur */
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
 
 
 /* De sector-kleuren die je in de HTML gebruikt */
