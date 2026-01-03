@@ -142,24 +142,34 @@
 
     <p>Twijfelt u of het om onderhoud, een verstopping of een rioolreparatie gaat? Neem gerust contact op, ik denk met u mee.</p>
   </section>
-    <form class="contact-form"
-    action="https://formsubmit.co/mail.mijndomein.nl.info@riooltechniekles.nl" method="POST">
+<form class="contact-form"
+      action="https://formsubmit.co/mail.mijndomein.nl.info@riooltechniekles.nl"
+      method="POST">
 
-      <label for="fname">Voornaam</label>
-      <input type="text" id="fname" name="firstname" placeholder="Uw voornaam" required>
+ 
+  <div style="display:none;">
+    <label>Telefoon</label>
+    <input type="text" name="phone" autocomplete="off">
+  </div>
 
-      <label for="lname">Achternaam</label>
-      <input type="text" id="lname" name="lastname" placeholder="Uw achternaam" required>
+  <label for="fname">Voornaam</label>
+  <input type="text" id="fname" name="firstname" placeholder="Uw voornaam" required>
 
-      <label for="email">E-mailadres</label>
-      <input type="email" id="email" name="email" placeholder="Uw e-mailadres" required>
+  <label for="lname">Achternaam</label>
+  <input type="text" id="lname" name="lastname" placeholder="Uw achternaam" required>
 
-      <label for="subject">Bericht</label>
-      <textarea id="subject" name="subject" placeholder="Stel uw vraag..." style="height:200px" required></textarea>
+  <label for="email">E-mailadres</label>
+  <input type="email" id="email" name="email" placeholder="Uw e-mailadres" required>
 
-      <input type="submit" value="Stuur bericht">
+  <label for="subject">Bericht</label>
+  <textarea id="subject" name="subject" placeholder="Stel uw vraag..." style="height:200px" required></textarea>
 
-    </form>
+  <input type="submit" value="Stuur bericht">
+
+</form>
+
+
+
  
 
   <div class="map">
