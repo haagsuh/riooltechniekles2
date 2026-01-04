@@ -370,7 +370,7 @@ html, body {
 /* De fix voor het uitrekken: gebruik een aspect ratio hack */
 .breuk-afbeeldingen .card-image {
     height: 0; 
-    padding-top: 45.66%; /* Dit zorgt voor een 3:2 beeldverhouding (standaard foto verhouding) */
+    padding-top: 132.66%; 
     background-size: cover;
     background-position: center;
     border-radius: 12px;
@@ -523,8 +523,8 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
 .Reparatie-1 { background-image: url(reparatiee.jpg); }
 .verstoppingen-2 { background-image: url(flexshaft.jpg); }
 .onderzoek-3 { background-image: url(camera.jpg); }
-.breuk { background-image: url(breuk.jpg); }
-.herstel { background-image: url(reparatie.jpg); }
+.breuk { background-image: url(vervanging-gress\ \(2\).jpg); }
+.herstel { background-image: url(vervanging-gress\ \(7\).jpg); }
 
 /* 5. FOOTER (3 Kolommen hersteld voor Desktop) */
 .footer-container {
