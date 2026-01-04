@@ -315,6 +315,9 @@ html, body {
     text-align: center;
     padding: 40px 20px;
     font-size: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 .copyright-bar {
   background-color: #127dc4;   /* kleur van het balkje */
@@ -322,6 +325,9 @@ html, body {
   text-align: center;
   padding: 10px;
   font-size: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 .rookinspectie {
     background-color: #197288;
@@ -329,6 +335,9 @@ html, body {
     text-align: center;
     padding: 40px 20px;
     font-size: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 .camerainspectie {
     background-color: #197288;
@@ -336,13 +345,19 @@ html, body {
     text-align: center;
     padding: 40px 20px;
     font-size: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 .verwachtingen {
-      background-color: #197288;
+    background-color: #197288;
     color: white;
     text-align: center;
     padding: 40px 20px;
     font-size: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 .rioolreparatie {
     background-color: #197288;
@@ -350,6 +365,9 @@ html, body {
     text-align: center;
     padding: 40px 20px;
     font-size: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 
 
@@ -366,12 +384,18 @@ html, body {
       padding: 50px; 
       color: white;
       text-align: center;
-      font-size: 20px; 
+      font-size: 20px;
+      border: 1px solid #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0); 
 }
 .sec4container { 
     background-color: #197288; 
     padding: 60px 20px;
-    text-align: center; 
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 
 .homepage-blok-sector3 { 
@@ -527,7 +551,10 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
     justify-content: center;   /* Centreert de gehele sectie binnen de pagina */
     padding: 60px 20px;
     gap: 40px;                 /* Ruimte tussen de tekst en de afbeelding */
-    flex-wrap: wrap;           /* Zorgt dat het op mobiel onder elkaar springt */
+    flex-wrap: wrap;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);           /* Zorgt dat het op mobiel onder elkaar springt */
 }
 
 /* 4. CARDS & AFBEELDINGEN (Jouw werkende logica) */
@@ -752,7 +779,10 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
   margin: 60px auto;
   padding: 0 20px;
   text-align: center;
-  background-color: #1c282b;
+  background-color: #197288;
+  border: 1px solid #00ff08;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 .swiper {
   margin: 2rem auto;
@@ -826,7 +856,10 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
     margin: 60px auto;
     padding: 0 20px;
     text-align: center;
-    background-color: #1c282b;
+    background-color: #197288;
+    border: 1px solid #00ff08;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
 }
 
 .werk-intro {
