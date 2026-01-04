@@ -309,12 +309,47 @@ html, body {
 .faq-a {
   line-height: 1.5;
 }
+.faq-block {
+    background-color: #197288;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 20px;
+}
 .copyright-bar {
   background-color: #127dc4;   /* kleur van het balkje */
   color: #fff;              /* tekstkleur */
   text-align: center;
   padding: 10px;
   font-size: 14px;
+}
+.rookinspectie {
+    background-color: #197288;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+.camerainspectie {
+    background-color: #197288;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+.verwachtingen {
+      background-color: #197288;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+.rioolreparatie {
+    background-color: #197288;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 20px;
 }
 
 
@@ -342,8 +377,10 @@ html, body {
 .homepage-blok-sector3 { 
     background-color: #197288; 
     padding: 60px; 
-    color: white; }
-    .breuk-tekst { 
+    color: white; 
+  }
+    
+.breuk-tekst { 
     flex: 1; 
     min-width: 300px; 
 }
@@ -358,6 +395,7 @@ html, body {
     color: white;
     font-size: 20px; 
 }
+
 
 .breuk-afbeeldingen { 
     flex: 1; 
@@ -625,7 +663,7 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
 .reparatietext {
     text-align: center;
     margin-top: 20px;
-    background-color: #197288;
+    background-color: #1c282b;
     padding: 40px 20px;
 }
 .reparatietext p {
@@ -714,6 +752,7 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
   margin: 60px auto;
   padding: 0 20px;
   text-align: center;
+  background-color: #1c282b;
 }
 .swiper {
   margin: 2rem auto;
@@ -787,6 +826,7 @@ h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
     margin: 60px auto;
     padding: 0 20px;
     text-align: center;
+    background-color: #1c282b;
 }
 
 .werk-intro {
