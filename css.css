@@ -429,6 +429,15 @@ html, body {
     min-width: 300px; 
 }
 
+#klein-logo {
+    width: 100px; /* Pas de breedte aan naar wens */
+    height: auto;  /* Behoudt de juiste verhoudingen */
+    border-radius: 8px;
+    margin: 10px;
+}
+
+
+
 /* De fix voor het uitrekken: gebruik een aspect ratio hack */
 .breuk-afbeeldingen .card-image {
     height: 0; 
@@ -440,6 +449,7 @@ html, body {
 }
 .breuk { background-image: url('breuk.jpg'); }
 .herstel { background-image: url('reparatie.jpg'); }
+
 
 h1, h2, .topcontainer h1,h3 { font-size: 32px; margin: 10px 0; color: #fcad46; }
 .topcontainer h2,  { color: #fcad46 !important; }
